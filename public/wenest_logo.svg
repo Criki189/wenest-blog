@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  
+  <!-- R1: Light version -->
+  <rect x="20" y="20" width="160" height="80" rx="8" fill="#F5F0EA"/>
+  <text x="100" y="65" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="200" fill="#1C1512" letter-spacing="5">wenest</text>
+  <line x1="52" y1="72" x2="148" y2="72" stroke="#E8E0D8" stroke-width="0.5"/>
+  <text x="100" y="84" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="7" font-weight="300" fill="#C4704F" letter-spacing="2.5">HOME, SORTED.</text>
+
+  <!-- R7: Dark version -->
+  <rect x="220" y="20" width="160" height="80" rx="8" fill="#1C1512"/>
+  <text x="300" y="65" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="200" fill="#F5F0EA" letter-spacing="5">wenest</text>
+  <line x1="252" y1="72" x2="348" y2="72" stroke="#C4704F" stroke-width="0.5"/>
+  <text x="300" y="84" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="7" font-weight="300" fill="#C4704F" letter-spacing="2.5">HOME, SORTED.</text>
+
+  <!-- R1 standalone — no background for web use -->
+  <text x="100" y="155" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="200" fill="#1C1512" letter-spacing="5">wenest</text>
+  <line x1="52" y1="162" x2="148" y2="162" stroke="#E8E0D8" stroke-width="0.5"/>
+  <text x="100" y="174" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="7" font-weight="300" fill="#C4704F" letter-spacing="2.5">HOME, SORTED.</text>
+
+  <!-- R7 standalone — transparent background -->
+  <text x="300" y="155" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="200" fill="#1C1512" letter-spacing="5">wenest</text>
+  <line x1="252" y1="162" x2="348" y2="162" stroke="#C4704F" stroke-width="0.5"/>
+  <text x="300" y="174" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="7" font-weight="300" fill="#C4704F" letter-spacing="2.5">HOME, SORTED.</text>
+
+</svg>
