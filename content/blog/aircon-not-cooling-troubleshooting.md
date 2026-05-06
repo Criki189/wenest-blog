@@ -5,7 +5,7 @@ description: "Your aircon's running but not cooling? Check these 8 common causes
 primary_keyword: "aircon not cooling"
 secondary_keywords: ["split system not cooling", "ducted aircon weak airflow", "aircon running but not cold"]
 bucket: "how-to"
-status: "review"
+status: "published"
 target_word_count: 1400
 internal_links: ["/services/hvac", "/membership"]
 schema_type: "Article"
@@ -28,7 +28,7 @@ body_images:
     caption: "A clogged filter like this cuts airflow by 40% or more"
     prompt: "Photorealistic close-up of a dirty air conditioner filter being removed from a white split system indoor unit in an Australian home, natural daylight, no text, no brand logos, residential interior visible in soft focus background"
 author: "Wenest"
-published_date: ""
+published_date: "2026-05-06"
 last_updated: "2026-05-06"
 ---
 
