@@ -1,0 +1,308 @@
+{
+  "name": "Wenest Blog Publisher (MVP)",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## 🚀 Cómo activar este workflow — pasos en orden\n\n### 1. Mapeá las 4 credenciales\nClick en cada nodo con ⚠️ y en \"Credential to use\" elegí:\n\n| Nodo | Credencial |\n|---|---|\n| **Airtable: Get next topic** | Airtable Personal Access Token account |\n| **Unsplash: Search cover** | Header Auth account |\n| **Claude: Generate article** | Anthropic account |\n| **GitHub: Get main SHA** | GitHub account |\n| **GitHub: Create branch** | GitHub account |\n| **GitHub: Commit markdown** | GitHub account |\n| **GitHub: Open PR** | GitHub account |\n| **Airtable: Mark drafted** | Airtable Personal Access Token account |\n\n*(El nodo \"Fetch system prompt\" es URL pública, no necesita credencial.)*\n\n### 2. Guardá el workflow\n**Cmd + S** o botón **Save** arriba a la derecha.\n\n### 3. Probá manualmente UN artículo\nClick **\"Test workflow\"** abajo en el centro (botón naranja).\n\nLa primera corrida tarda **60–90 segundos**. n8n va a ir iluminando los nodos verde uno por uno a medida que cada paso se completa.\n\n### 4. Verificá el resultado\nAl terminar:\n1. **GitHub** → andá a https://github.com/Criki189/wenest-blog/pulls — debe haber un PR nuevo titulado \"Draft: ...\"\n2. **Airtable** → la fila T001 ahora debe estar en `status: drafted`\n3. **Anthropic** → cargo de ~$0.05–$0.15 USD\n\n### 5. Si algo falla\n- Click en el nodo rojo → pestaña \"Error\" → mandame el mensaje\n- NO actives el cron todavía — primero validá calidad de varios artículos manuales\n\n### 6. Cuando funcione bien (después de 5-10 corridas exitosas)\nReemplazá el **Manual Trigger** por un **Schedule Trigger** (cron) con: lunes 09:00 hora Sydney.",
+        "height": 540,
+        "width": 720,
+        "color": 3
+      },
+      "id": "sticky-instructions",
+      "name": "Instructions",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [-1280, -640]
+    },
+    {
+      "parameters": {},
+      "id": "trigger-manual",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [-1200, 0]
+    },
+    {
+      "parameters": {
+        "operation": "search",
+        "base": {
+          "__rl": true,
+          "value": "appZTybjYcF8A1yIK",
+          "mode": "id"
+        },
+        "table": {
+          "__rl": true,
+          "value": "tblte5AGUZ00crvpL",
+          "mode": "id"
+        },
+        "returnAll": false,
+        "limit": 1,
+        "filterByFormula": "AND({status} = 'queued', {seed_batch} = TRUE())",
+        "sort": {
+          "property": [
+            { "field": "priority", "direction": "asc" },
+            { "field": "topic_id", "direction": "asc" }
+          ]
+        },
+        "options": {}
+      },
+      "id": "airtable-get-topic",
+      "name": "Airtable: Get next topic",
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [-960, 0],
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "REPLACE_WITH_AIRTABLE_CREDENTIAL_ID",
+          "name": "Airtable Personal Access Token account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "=https://api.unsplash.com/search/photos?query={{ encodeURIComponent($json.fields.primary_keyword + ' Sydney home') }}&per_page=1&orientation=landscape&content_filter=high",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "options": {}
+      },
+      "id": "unsplash-search",
+      "name": "Unsplash: Search cover",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [-720, 0],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "REPLACE_WITH_UNSPLASH_CREDENTIAL_ID",
+          "name": "Header Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://raw.githubusercontent.com/Criki189/wenest-blog/main/prompts/article-system-prompt.md",
+        "options": { "response": { "response": { "responseFormat": "text" } } }
+      },
+      "id": "fetch-system-prompt",
+      "name": "Fetch system prompt",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [-480, 0]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "// Build the rendered system prompt by replacing {{VARIABLES}} with values from Airtable + Unsplash.\nconst topic = $('Airtable: Get next topic').item.json.fields;\nconst unsplash = $('Unsplash: Search cover').item.json;\nconst systemPromptTemplate = $('Fetch system prompt').item.json.data || $('Fetch system prompt').item.json;\n\nconst today = new Date().toISOString().slice(0, 10);\n\n// Pick first result; fall back to a default if none.\nconst firstPhoto = (unsplash.results && unsplash.results[0]) || null;\nconst coverUrl = firstPhoto\n  ? firstPhoto.urls.regular\n  : 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1600&q=80';\nconst coverAlt = firstPhoto\n  ? (firstPhoto.alt_description || firstPhoto.description || 'Sydney home interior')\n  : 'Sydney home interior';\n\n// AVAILABLE_INTERNAL_LINKS — for the seed batch we pass a static list.\nconst availableInternalLinks = JSON.stringify([\n  '/', '/membership',\n  '/services/plumbing', '/services/electrical', '/services/hvac',\n  '/services/pool', '/services/gardening'\n]);\n\nconst secondaryKeywords = (topic.secondary_keywords || '').split(/;\\s*/).filter(Boolean).join('; ');\n\nlet rendered = String(systemPromptTemplate);\nconst replace = (k, v) => { rendered = rendered.split('{{' + k + '}}').join(v ?? ''); };\n\nreplace('TITLE', topic.title);\nreplace('SLUG', topic.slug);\nreplace('PRIMARY_KEYWORD', topic.primary_keyword);\nreplace('SECONDARY_KEYWORDS', secondaryKeywords);\nreplace('BUCKET', topic.bucket);\nreplace('TARGET_WORD_COUNT', String(topic.target_word_count || 1500));\nreplace('SEARCH_INTENT', topic.search_intent || 'informational');\nreplace('BRIEF', topic.brief || '');\nreplace('TODAY_DATE', today);\nreplace('AVAILABLE_INTERNAL_LINKS', availableInternalLinks);\nreplace('COVER_IMAGE_URL', coverUrl);\nreplace('COVER_IMAGE_ALT', coverAlt);\n\nreturn {\n  json: {\n    topic_id: topic.topic_id,\n    title: topic.title,\n    slug: topic.slug,\n    bucket: topic.bucket,\n    record_id: $('Airtable: Get next topic').item.json.id,\n    cover_url: coverUrl,\n    cover_alt: coverAlt,\n    today,\n    system_prompt: rendered\n  }\n};\n"
+      },
+      "id": "build-context",
+      "name": "Build context",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [-240, 0]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "anthropicApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "anthropic-version", "value": "2023-06-01" },
+            { "name": "content-type", "value": "application/json" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"claude-sonnet-4-5\",\n  \"max_tokens\": 8000,\n  \"temperature\": 0.7,\n  \"system\": {{ JSON.stringify($json.system_prompt) }},\n  \"messages\": [\n    { \"role\": \"user\", \"content\": \"Generate the article now.\" }\n  ]\n}",
+        "options": { "timeout": 180000 }
+      },
+      "id": "anthropic-generate",
+      "name": "Claude: Generate article",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [0, 0],
+      "credentials": {
+        "anthropicApi": {
+          "id": "REPLACE_WITH_ANTHROPIC_CREDENTIAL_ID",
+          "name": "Anthropic account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "// Extract Claude's response. The article should be a complete markdown\n// document (frontmatter + body). Strip markdown code fences if present.\nconst response = $input.item.json;\nlet content = '';\n\nif (response.content && Array.isArray(response.content)) {\n  content = response.content.map(c => c.text || '').join('\\n');\n} else if (typeof response === 'string') {\n  content = response;\n}\n\ncontent = content.trim();\n// Strip ```markdown ... ``` fences\nif (content.startsWith('```')) {\n  content = content.replace(/^```[a-z]*\\n/, '').replace(/```\\s*$/, '').trim();\n}\n\nconst ctx = $('Build context').item.json;\n\n// Base64 encode for GitHub API.\nconst contentBase64 = Buffer.from(content, 'utf8').toString('base64');\n\nreturn {\n  json: {\n    slug: ctx.slug,\n    title: ctx.title,\n    bucket: ctx.bucket,\n    record_id: ctx.record_id,\n    today: ctx.today,\n    markdown: content,\n    markdown_base64: contentBase64,\n    branch_name: 'drafts/' + ctx.slug,\n    file_path: 'content/blog/' + ctx.slug + '.md'\n  }\n};\n"
+      },
+      "id": "parse-response",
+      "name": "Parse Claude output",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [240, 0]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://api.github.com/repos/Criki189/wenest-blog/git/refs/heads/main",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "options": {}
+      },
+      "id": "github-get-sha",
+      "name": "GitHub: Get main SHA",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [480, 0],
+      "credentials": {
+        "githubApi": {
+          "id": "REPLACE_WITH_GITHUB_CREDENTIAL_ID",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.github.com/repos/Criki189/wenest-blog/git/refs",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"ref\": \"refs/heads/{{ $('Parse Claude output').item.json.branch_name }}\",\n  \"sha\": \"{{ $('GitHub: Get main SHA').item.json.object.sha }}\"\n}",
+        "options": {}
+      },
+      "id": "github-create-branch",
+      "name": "GitHub: Create branch",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [720, 0],
+      "credentials": {
+        "githubApi": {
+          "id": "REPLACE_WITH_GITHUB_CREDENTIAL_ID",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "PUT",
+        "url": "=https://api.github.com/repos/Criki189/wenest-blog/contents/{{ $('Parse Claude output').item.json.file_path }}",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"message\": \"Draft: {{ $('Parse Claude output').item.json.title }} (article)\",\n  \"branch\": \"{{ $('Parse Claude output').item.json.branch_name }}\",\n  \"content\": \"{{ $('Parse Claude output').item.json.markdown_base64 }}\"\n}",
+        "options": {}
+      },
+      "id": "github-put-file",
+      "name": "GitHub: Commit markdown",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [960, 0],
+      "credentials": {
+        "githubApi": {
+          "id": "REPLACE_WITH_GITHUB_CREDENTIAL_ID",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.github.com/repos/Criki189/wenest-blog/pulls",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "githubApi",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"title\": \"Draft: {{ $('Parse Claude output').item.json.title }}\",\n  \"head\": \"{{ $('Parse Claude output').item.json.branch_name }}\",\n  \"base\": \"main\",\n  \"body\": \"Auto-generated by n8n on {{ $('Parse Claude output').item.json.today }}.\\n\\n**Topic:** {{ $('Parse Claude output').item.json.title }}\\n**Slug:** `{{ $('Parse Claude output').item.json.slug }}`\\n**Bucket:** {{ $('Parse Claude output').item.json.bucket }}\\n\\nTo publish: edit frontmatter to `status: published`, set `published_date`, then merge to main.\"\n}",
+        "options": {}
+      },
+      "id": "github-open-pr",
+      "name": "GitHub: Open PR",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1200, 0],
+      "credentials": {
+        "githubApi": {
+          "id": "REPLACE_WITH_GITHUB_CREDENTIAL_ID",
+          "name": "GitHub account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "base": {
+          "__rl": true,
+          "value": "appZTybjYcF8A1yIK",
+          "mode": "id"
+        },
+        "table": {
+          "__rl": true,
+          "value": "tblte5AGUZ00crvpL",
+          "mode": "id"
+        },
+        "id": "={{ $('Parse Claude output').item.json.record_id }}",
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "status": "drafted",
+            "date_drafted": "={{ $('Parse Claude output').item.json.today }}",
+            "notes": "=PR: {{ $('GitHub: Open PR').item.json.html_url }}"
+          }
+        },
+        "options": {}
+      },
+      "id": "airtable-update",
+      "name": "Airtable: Mark drafted",
+      "type": "n8n-nodes-base.airtable",
+      "typeVersion": 2.1,
+      "position": [1440, 0],
+      "credentials": {
+        "airtableTokenApi": {
+          "id": "REPLACE_WITH_AIRTABLE_CREDENTIAL_ID",
+          "name": "Airtable Personal Access Token account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [[{ "node": "Airtable: Get next topic", "type": "main", "index": 0 }]]
+    },
+    "Airtable: Get next topic": {
+      "main": [[{ "node": "Unsplash: Search cover", "type": "main", "index": 0 }]]
+    },
+    "Unsplash: Search cover": {
+      "main": [[{ "node": "Fetch system prompt", "type": "main", "index": 0 }]]
+    },
+    "Fetch system prompt": {
+      "main": [[{ "node": "Build context", "type": "main", "index": 0 }]]
+    },
+    "Build context": {
+      "main": [[{ "node": "Claude: Generate article", "type": "main", "index": 0 }]]
+    },
+    "Claude: Generate article": {
+      "main": [[{ "node": "Parse Claude output", "type": "main", "index": 0 }]]
+    },
+    "Parse Claude output": {
+      "main": [[{ "node": "GitHub: Get main SHA", "type": "main", "index": 0 }]]
+    },
+    "GitHub: Get main SHA": {
+      "main": [[{ "node": "GitHub: Create branch", "type": "main", "index": 0 }]]
+    },
+    "GitHub: Create branch": {
+      "main": [[{ "node": "GitHub: Commit markdown", "type": "main", "index": 0 }]]
+    },
+    "GitHub: Commit markdown": {
+      "main": [[{ "node": "GitHub: Open PR", "type": "main", "index": 0 }]]
+    },
+    "GitHub: Open PR": {
+      "main": [[{ "node": "Airtable: Mark drafted", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Australia/Sydney"
+  }
+}
