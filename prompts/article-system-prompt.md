@@ -305,6 +305,8 @@ Before producing final output, verify:
 - [ ] Australian English throughout — no organize/color/neighbor/aluminum/center.
 - [ ] Zero banned phrases or filler adverbs.
 - [ ] Frontmatter is complete, valid YAML, all required fields present.
+- [ ] **`cover_image` is set to `{{COVER_IMAGE_URL}}` (literal substitution from n8n) — NEVER omit this field.**
+- [ ] **`cover_image_alt` is set to `{{COVER_IMAGE_ALT}}` or a descriptive 8-15 word alt — NEVER omit this field.**
 - [ ] All `internal_links` come from `available_internal_links` only.
 - [ ] FAQ has 3-5 items, each answer 40-100 words, each question phrased like a real Google query.
 - [ ] CTA is contextual to the specific topic, not generic.

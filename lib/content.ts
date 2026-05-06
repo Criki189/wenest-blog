@@ -50,8 +50,11 @@ export const FrontmatterSchema = z
     schema_type: z.string().default("Article"),
     faq: z.boolean().default(false),
     faq_items: z.array(FaqItemSchema).default([]),
-    cover_image: z.string().min(1),
-    cover_image_alt: z.string().min(3),
+    cover_image: z
+      .string()
+      .min(1)
+      .default("https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1600&q=80"),
+    cover_image_alt: z.string().min(3).default("Sydney home interior"),
     body_images: z.array(BodyImageSchema).default([]),
     author: z.string().default("Wenest"),
     published_date: isoString.default(""),
