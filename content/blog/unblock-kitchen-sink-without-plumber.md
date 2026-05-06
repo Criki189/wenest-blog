@@ -5,7 +5,7 @@ description: "Step-by-step guide to clear a blocked kitchen sink using tools you
 primary_keyword: "unblock kitchen sink"
 secondary_keywords: ["blocked sink drain", "kitchen sink not draining", "DIY sink unblocking"]
 bucket: "how-to"
-status: "review"
+status: "published"
 target_word_count: 1500
 internal_links: ["/membership", "/services/plumbing"]
 schema_type: "Article"
@@ -28,7 +28,7 @@ body_images:
     caption: "Most blockages sit in the P-trap, which you can remove with a wrench and bucket."
     prompt: "Photorealistic image of hands removing a white PVC P-trap under a kitchen sink in an Australian home, bucket underneath to catch water, warm natural lighting, no text, no logos, residential setting"
 author: "Wenest"
-published_date: ""
+published_date: "2026-05-06"
 last_updated: "2026-05-06"
 ---
 
