@@ -19,7 +19,7 @@ faq_items:
     answer: "Grease and cooking oil are the main culprits. They coat the inside of pipes and trap food scraps, coffee grounds, and soap residue. In older homes with cast iron or galvanised pipes, rust and scale buildup narrow the pipe diameter over time, making blockages more frequent."
   - question: "When should I call a plumber instead of DIY?"
     answer: "Call a licensed plumber if water backs up into other fixtures when you run the sink, if you've removed the P-trap and the blockage is further down, or if the sink has been slow-draining for weeks despite your attempts. Also call if you're in a strata building and suspect the blockage is in a shared stack."
-cover_image: "/images/blog/unblock-kitchen-sink-without-plumber/cover.jpg"
+cover_image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&q=80"
 cover_image_alt: "Kitchen sink plunger stainless steel close up residential"
 cover_image_prompt: "kitchen sink plunger stainless steel close up residential warm lighting"
 body_images:

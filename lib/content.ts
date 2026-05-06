@@ -107,9 +107,8 @@ async function renderMarkdown(md: string): Promise<string> {
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeSlug)
     .use(rehypeAutolinkHeadings, {
-      behavior: "append",
+      behavior: "wrap",
       properties: { className: ["heading-anchor"], ariaLabel: "Permalink" },
-      content: { type: "text", value: " #" },
     })
     .use(rehypeStringify, { allowDangerousHtml: true })
     .process(md);

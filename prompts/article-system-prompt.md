@@ -108,7 +108,7 @@ faq_items:
     answer: "<answer 2, 40-100 words>"
   - question: "<question 3>"
     answer: "<answer 3, 40-100 words>"
-cover_image: "/images/blog/{{SLUG}}/cover.jpg"
+cover_image: "{{COVER_IMAGE_URL}}"
 cover_image_alt: "<8-15 word descriptive alt text; include primary_keyword if natural>"
 cover_image_prompt: "<Unsplash search query: 3-5 specific visual terms, photographic, no brand names, e.g. 'kitchen sink plunger stainless steel close up'>"
 body_images:
