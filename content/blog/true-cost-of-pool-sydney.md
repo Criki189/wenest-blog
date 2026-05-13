@@ -5,7 +5,7 @@ description: "Pool maintenance cost Sydney breakdown: chemicals, electricity, re
 primary_keyword: "pool maintenance cost Sydney"
 secondary_keywords: ["Sydney pool running cost", "pool ownership AUD", "pool maintenance budget Australia"]
 bucket: "home-operations"
-status: "review"
+status: "published"
 target_word_count: 1800
 internal_links: ["/membership", "/services/pool"]
 schema_type: "Article"
@@ -34,7 +34,7 @@ body_images:
     caption: "Upgrading to a variable-speed pump saves $300–$500 per year in electricity"
     prompt: "photorealistic variable speed pool pump and filter system installed beside residential pool, Australian suburban home, clean modern equipment, natural daylight, no brand names or text in image"
 author: "Wenest"
-published_date: ""
+published_date: "2026-05-13"
 last_updated: "2026-05-13"
 ---
 
