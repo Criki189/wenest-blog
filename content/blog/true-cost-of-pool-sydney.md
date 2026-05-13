@@ -56,7 +56,6 @@ Start with the obvious expenses. These are the ones you expect when you sign up 
 
 That's $1,400 to $2,300 before anything breaks.
 
-{{INSERT_BODY_IMAGE_1}}
 
 ## The iceberg costs nobody mentions upfront
 
