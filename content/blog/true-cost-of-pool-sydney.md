@@ -56,8 +56,6 @@ Start with the obvious expenses. These are the ones you expect when you sign up 
 
 That's $1,400 to $2,300 before anything breaks.
 
-{{INSERT_BODY_IMAGE_1}}
-
 ## The iceberg costs nobody mentions upfront
 
 Here's where the real pool maintenance cost Sydney homeowners miss becomes visible.
@@ -87,8 +85,6 @@ Not all pools cost the same to run. The spread between a $2,000 annual bill and 
 **Water chemistry discipline**: if you're testing and adjusting weekly, you'll spend less on corrective chemicals than if you wait until the water turns green and you're shocking it back to clarity. A $40 test kit and 20 minutes per week saves you $200 to $400 annually in algaecide and shock treatments.
 
 **How much you use it**: a pool that gets swum in daily needs more chemicals, more filtration hours, and more frequent backwashing than one that sits idle most of the year. If you're heating it year-round and the kids are in it after school every day, you're at the top end of the cost range. If it's a summer-only pool that gets used on weekends, you're closer to the bottom.
-
-{{INSERT_BODY_IMAGE_2}}
 
 ## The Wenest take
 
