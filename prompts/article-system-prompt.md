@@ -14,7 +14,7 @@ The n8n workflow:
 4. The user message to Claude is a single line: `Generate the article now.`
 5. Parses Claude's response — a single markdown document with YAML frontmatter.
 6. Validates frontmatter against the Zod schema in the Next.js blog repo (`/lib/content.ts`).
-7. Generates images: Unsplash for cover (using `cover_image_prompt`), DALL·E for body images (using `body_images[].prompt`).
+7. Generates images: Unsplash for cover (using `cover_image_prompt`). No body images.
 8. Commits markdown + images to a `drafts/{{SLUG}}` branch on GitHub and opens a PR titled `Draft: {{TITLE}}`.
 
 ## Variables n8n must substitute
@@ -111,11 +111,6 @@ faq_items:
 cover_image: "{{COVER_IMAGE_URL}}"
 cover_image_alt: "<8-15 word descriptive alt text; include primary_keyword if natural>"
 cover_image_prompt: "<Unsplash search query: 3-5 specific visual terms, photographic, no brand names, e.g. 'kitchen sink plunger stainless steel close up'>"
-body_images:
-  - src: "/images/blog/{{SLUG}}/body-1.jpg"
-    alt: "<alt text>"
-    caption: "<optional 8-12 word caption>"
-    prompt: "<DALL-E 3 prompt: photorealistic, Australian residential context, warm natural lighting, no text in image, no brand logos>"
 author: "Wenest"
 published_date: ""
 last_updated: "{{TODAY_DATE}}"
@@ -126,7 +121,7 @@ After the frontmatter (one blank line, then the body), follow this structure exa
 
 1. **Hook** (1-2 sentences) — the specific pain or moment the reader is in. Concrete, not abstract. Name a time of day, a smell, a number, a suburb.
 2. **Promise** (1 sentence) — what the reader will know or be able to do by the end.
-3. **Body** — 4-7 H2 sections. Each H2 answers one question or covers one step. Use H3 only when a sub-step needs its own heading. Place `{{INSERT_BODY_IMAGE_1}}` on its own line where a body image makes the most sense (usually after the second H2). Use a second body image only if the article is over 1,800 words.
+3. **Body** — 4-7 H2 sections. Each H2 answers one question or covers one step. Use H3 only when a sub-step needs its own heading. Do NOT insert any body images, image placeholders, or tokens like `{{INSERT_BODY_IMAGE_X}}` — only the cover image is used.
 4. **The Wenest take** (optional, 1 paragraph, only when there's a real insight) — H2 titled "The Wenest take". Pattern: "In the homes we work in, the version of this that actually fails is X. The fix is Y."
 5. **Frequently asked questions** — H2 titled exactly "Frequently asked questions". Render each `faq_items` entry as an H3 question followed by the paragraph answer.
 6. **CTA** — final paragraph. Soft, contextual, links to `/membership` or `/`. Pattern below.
