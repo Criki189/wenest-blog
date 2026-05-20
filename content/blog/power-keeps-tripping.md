@@ -5,7 +5,7 @@ description: "Your circuit breaker keeps tripping in Sydney? Learn which switch,
 primary_keyword: "circuit breaker keeps tripping"
 secondary_keywords: ["RCD keeps tripping Australia", "safety switch trips", "power trips frequently"]
 bucket: "problems"
-status: "review"
+status: "published"
 target_word_count: 1400
 internal_links: ["/membership", "/services/electrical"]
 schema_type: "Article"
@@ -23,7 +23,7 @@ cover_image: "https://images.unsplash.com/photo-1720175356041-6b1c963e0075?crop=
 cover_image_alt: "Electrical switchboard with circuit breakers and safety switches in a Sydney home"
 cover_image_prompt: "electrical switchboard circuit breaker panel residential Sydney home"
 author: "Wenest"
-published_date: ""
+published_date: "2026-05-20"
 last_updated: "2026-05-20"
 ---
 
