@@ -5,7 +5,7 @@ description: "Verify NSW electrician licences, spot red flags, and ask the right
 primary_keyword: "licensed electrician Sydney"
 secondary_keywords: ["how to verify electrician licence NSW", "hiring electrician questions", "electrician red flags Sydney"]
 bucket: "transactional"
-status: "review"
+status: "published"
 target_word_count: 1500
 internal_links: ["/membership", "/services/electrical", "/"]
 schema_type: "Article"
@@ -25,7 +25,7 @@ cover_image: "https://images.unsplash.com/photo-1720175328600-06f71cee36c4?crop=
 cover_image_alt: "A small white house with a blue roof in suburban Sydney"
 cover_image_prompt: "licensed electrician Sydney home electrical work"
 author: "Wenest"
-published_date: ""
+published_date: "2026-05-22"
 last_updated: "2026-05-22"
 ---
 
