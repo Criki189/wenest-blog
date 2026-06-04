@@ -1,8 +1,15 @@
 # Wenest Blog — Project Instructions
 
+> **CORRECTION (2026-06-04):** §10 below is **stale**. The live blog is **NOT
+> Ghost** — `blog.wenest.com.au` returns 404. The live blog is **this Next.js
+> app on Vercel**, served at `www.wenest.com.au/blog`. **Publishing = commit the
+> markdown with `status: published` to `main`; Vercel redeploys.** No Ghost
+> Admin API is involved. The fully-automatic publisher lives in
+> `scripts/auto-publish.ts` (see `scripts/README-auto-publish.md`).
+
 ## Purpose
 
-This folder is the **authoring workspace** for the Wenest blog automation pipeline. It is NOT the deployed blog itself — that lives in Ghost at `blog.wenest.com.au` (see §10).
+This folder is the source-of-truth repo for the Wenest blog **and** the deployed blog itself: a Next.js app on Vercel served at `www.wenest.com.au/blog`. (Earlier plans targeted Ghost at `blog.wenest.com.au` — that path was abandoned; see the correction note above and §10.)
 
 What lives here:
 - `CLAUDE.md` — this file. Read first by any Claude instance entering the project.
