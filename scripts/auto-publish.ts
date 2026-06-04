@@ -251,11 +251,18 @@ async function generateTopic(service: Service, bucket: string): Promise<Topic> {
   const blacklist = fs.existsSync(BLACKLIST_FILE) ? fs.readFileSync(BLACKLIST_FILE, "utf8") : "";
   const taken = existingTitles();
 
-  const system = `You are the SEO content strategist for Wenest, a premium home-maintenance concierge in Sydney, Australia. You pick blog topics that rank on Google AU for busy homeowners (the "Sarah" persona) and build trust toward a Wenest membership. Australian English. We do HOME operations, never body/wellness, never naming competitors.`;
+  const bodyRule = service.personalCare
+    ? `Wenest also offers at-home personal-care services (beauty, haircut, massage). For THIS topic, frame everything around the at-home SERVICE — convenience for busy households, what to expect from a mobile visit, how Wenest vets the professional, scheduling — NOT skincare/hair/health tips and NOT medical advice.`
+    : `We do HOME operations, never body/wellness.`;
+  const system = `You are the SEO content strategist for Wenest, a premium home-maintenance concierge in Sydney, Australia. You pick blog topics that rank on Google AU for busy homeowners (the "Sarah" persona) and build trust toward a Wenest membership. Australian English. ${bodyRule} Never name competitors.`;
+
+  const pcFraming = service.personalCare
+    ? `\n\nIMPORTANT framing: ${service.label} is an at-home personal-care SERVICE. The topic must be about the SERVICE experience (booking a mobile ${service.label} in Sydney, what to expect, vetting, convenience for busy people), NOT a wellness/skincare/hair-routine guide and NOT health advice.`
+    : "";
 
   const user = `Propose ONE fresh blog topic.
 
-Service focus: ${service.label} (Wenest service page: ${service.path})
+Service focus: ${service.label} (Wenest service page: ${service.path})${pcFraming}
 Content bucket: "${bucket}" — ${bucketName(bucket)} (${bucketBlurb(bucket)})
 Target length: about ${wordCount} words.
 
@@ -381,6 +388,9 @@ async function generateArticle(
   const coverAlt = `${topic.primary_keyword} — Sydney home`;
   let system = renderSystemPrompt(topic, coverUrl, coverAlt, internalLinks);
   system = system.split("{{BUCKET}}").join(bucket);
+  if (service.personalCare) {
+    system += `\n\n## APPROVED CATEGORY OVERRIDE\n${service.label} is an APPROVED Wenest at-home service. Do NOT refuse this topic as off-brand wellness. Write about the at-home SERVICE experience — convenience for busy Sydney households, what to expect from a mobile visit, how Wenest vets and coordinates the professional, scheduling, typical AUD price ranges. Keep Wenest's calm concierge voice. Do NOT give medical, dermatological, cosmetic-health or treatment advice; for anything health-related, defer to a qualified professional.`;
+  }
 
   const raw = await claude({
     system,

@@ -38,6 +38,13 @@ export type Service = {
   path: string;
   blogEligible: boolean;
   coverTheme: CoverTheme;
+  /**
+   * Personal-care / at-home services (beauty, haircut, massage). When true, the
+   * topic + article are framed around the AT-HOME SERVICE EXPERIENCE (convenience,
+   * vetting, scheduling, what to expect) rather than wellness/skincare/health tips —
+   * so the editorial "we do home, not body" guardrail doesn't refuse them.
+   */
+  personalCare?: boolean;
 };
 
 export type CoverTheme =
@@ -67,10 +74,12 @@ export const SERVICES: Service[] = [
   // Tier 3 — Life & Convenience (home-adjacent only)
   { id: "moving", label: "moving in and out of a home", path: "/services/moving", blogEligible: true, coverTheme: "general" },
   { id: "pet", label: "pet care at home", path: "/services/pet-care", blogEligible: true, coverTheme: "general" },
-  // Body / wellness — off-brand for a home-operations blog. Excluded by default.
-  { id: "haircut", label: "at-home haircuts", path: "/services/haircut", blogEligible: false, coverTheme: "general" },
-  { id: "beauty", label: "at-home beauty", path: "/services/beauty", blogEligible: false, coverTheme: "general" },
-  { id: "massage", label: "at-home massage", path: "/services/massage", blogEligible: false, coverTheme: "general" },
+  // At-home personal care. Enabled and framed as a SERVICE (convenience / what to
+  // expect / vetting), not as wellness tips — see `personalCare` above. To stop
+  // covering one, just set its blogEligible to false.
+  { id: "haircut", label: "at-home haircuts", path: "/services/haircut", blogEligible: true, coverTheme: "general", personalCare: true },
+  { id: "beauty", label: "at-home beauty treatments", path: "/services/beauty", blogEligible: true, coverTheme: "general", personalCare: true },
+  { id: "massage", label: "at-home massage", path: "/services/massage", blogEligible: true, coverTheme: "general", personalCare: true },
 ];
 
 /**

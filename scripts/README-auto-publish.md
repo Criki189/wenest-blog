@@ -47,7 +47,7 @@ npx tsx scripts/auto-publish.ts --dry-run --service=pool --bucket=seasonal
 bash scripts/run-auto-publish.sh        # writes to content/blog, commits, pushes main
 ```
 
-## Put it on a schedule (Tue + Thu, 10:00 local)
+## Put it on a schedule (Mon/Wed/Fri, 10:00 local)
 
 Only after you're happy with a few dry-runs:
 

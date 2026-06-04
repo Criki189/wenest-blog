@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <!--
   Wenest blog — automatic publisher schedule (macOS launchd).
-  Publishes one article on Tuesday and Thursday at 10:00 LOCAL time.
+  Publishes one article on Monday, Wednesday and Friday at 10:00 LOCAL time.
   (Local = your Mac's timezone. The exact hour does not matter for SEO; it
   only needs the Mac powered on around then.)
 
@@ -27,12 +27,17 @@
   <key>StartCalendarInterval</key>
   <array>
     <dict>
-      <key>Weekday</key><integer>2</integer>
+      <key>Weekday</key><integer>1</integer>
       <key>Hour</key><integer>10</integer>
       <key>Minute</key><integer>0</integer>
     </dict>
     <dict>
-      <key>Weekday</key><integer>4</integer>
+      <key>Weekday</key><integer>3</integer>
+      <key>Hour</key><integer>10</integer>
+      <key>Minute</key><integer>0</integer>
+    </dict>
+    <dict>
+      <key>Weekday</key><integer>5</integer>
       <key>Hour</key><integer>10</integer>
       <key>Minute</key><integer>0</integer>
     </dict>
