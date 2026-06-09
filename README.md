@@ -18,8 +18,8 @@ A SEO-first, markdown-driven blog ready to receive automated articles from n8n.
 | Path | What |
 |---|---|
 | `/blog` | Article index with featured post + category filter |
-| `/blog/[slug]` | Article page with cover image, JSON-LD `Article` schema, related posts |
-| `/blog/category/[category]` | Category archive |
+| `/blog/[slug]` | Article page (or category archive when the slug is one of the fixed buckets) |
+| `/blog/[category]` | Category archive (flat URL; old `/blog/category/<x>` 301-redirects here) |
 | `/sitemap.xml` | Auto-generated sitemap |
 | `/robots.txt` | Auto-generated |
 | `/api/posts` | `POST` endpoint for n8n to publish new articles |

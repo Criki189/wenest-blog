@@ -18,7 +18,7 @@ export default function Footer() {
             {BUCKETS.map((b) => (
               <li key={b.slug}>
                 <Link
-                  href={`/category/${b.slug}`}
+                  href={`/${b.slug}`}
                   className="hover:text-ink transition-colors"
                 >
                   {b.name}

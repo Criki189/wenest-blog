@@ -24,7 +24,7 @@ export default function Header() {
           {BUCKETS.slice(0, 4).map((b) => (
             <Link
               key={b.slug}
-              href={`/category/${b.slug}`}
+              href={`/${b.slug}`}
               className="hover:text-gold transition-colors font-medium"
             >
               {b.name}

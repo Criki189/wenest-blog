@@ -22,7 +22,7 @@ export default function ArticleHeader({ article }: { article: Article }) {
       <div className="max-w-reading mx-auto px-6 pt-12">
         <div className="flex flex-wrap items-center gap-2 text-xs uppercase tracking-wider text-accent font-medium mb-5">
           <Link
-            href={`/category/${fm.bucket}`}
+            href={`/${fm.bucket}`}
             className="hover:underline underline-offset-4"
           >
             {bucketName(fm.bucket)}

@@ -17,7 +17,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 1,
     },
     ...BUCKETS.map((b) => ({
-      url: absoluteBlogUrl(`/category/${b.slug}`),
+      url: absoluteBlogUrl(`/${b.slug}`),
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
       priority: 0.5,

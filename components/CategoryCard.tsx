@@ -13,7 +13,7 @@ export default function CategoryCard({
 }) {
   return (
     <Link
-      href={`/category/${slug}`}
+      href={`/${slug}`}
       className="group block border border-rule rounded-lg p-6 hover:border-accent hover:bg-accent-soft transition-all"
     >
       <p className="text-xs uppercase tracking-wider text-muted font-medium">

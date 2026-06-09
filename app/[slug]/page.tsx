@@ -6,7 +6,8 @@ import {
   getRelatedArticles,
 } from "@/lib/content";
 import { SITE, absoluteBlogUrl } from "@/lib/site";
-import { bucketName } from "@/lib/buckets";
+import { bucketName, BUCKETS, BUCKET_SLUGS } from "@/lib/buckets";
+import CategoryView from "@/components/CategoryView";
 import ArticleHeader from "@/components/ArticleHeader";
 import TableOfContents from "@/components/TableOfContents";
 import FAQAccordion from "@/components/FAQAccordion";
@@ -17,7 +18,9 @@ export const revalidate = 60;
 export const dynamicParams = true;
 
 export async function generateStaticParams() {
-  return getAllSlugs().map((slug) => ({ slug }));
+  // Posts and the fixed category buckets share this flat `/[slug]` route, so
+  // category URLs are `/blog/<bucket>` (no `/category/` segment).
+  return [...getAllSlugs(), ...BUCKET_SLUGS].map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
@@ -25,6 +28,16 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }): Promise<Metadata> {
+  // Category bucket → category archive metadata.
+  if ((BUCKET_SLUGS as readonly string[]).includes(params.slug)) {
+    const name = bucketName(params.slug);
+    const blurb = BUCKETS.find((b) => b.slug === params.slug)?.blurb || "";
+    return {
+      title: `${name} articles`,
+      description: blurb,
+      alternates: { canonical: absoluteBlogUrl(`/${params.slug}`) },
+    };
+  }
   const a = await getArticleBySlug(params.slug);
   if (!a) return {};
   const fm = a.frontmatter;
@@ -61,6 +74,10 @@ export default async function ArticlePage({
 }: {
   params: { slug: string };
 }) {
+  // Category bucket → render the category archive instead of an article.
+  if ((BUCKET_SLUGS as readonly string[]).includes(params.slug)) {
+    return <CategoryView slug={params.slug} />;
+  }
   const article = await getArticleBySlug(params.slug);
   if (!article) notFound();
   const related = await getRelatedArticles(article);
@@ -94,7 +111,7 @@ export default async function ArticlePage({
         "@type": "ListItem",
         position: 2,
         name: bucketName(fm.bucket),
-        item: absoluteBlogUrl(`/category/${fm.bucket}`),
+        item: absoluteBlogUrl(`/${fm.bucket}`),
       },
       { "@type": "ListItem", position: 3, name: fm.title, item: url },
     ],
