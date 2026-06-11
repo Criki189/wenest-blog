@@ -13,7 +13,7 @@ bucket: how-to
 status: published
 target_word_count: 1445
 internal_links:
-  - /services/appliances
+  - /pricing
   - /blog/unblock-kitchen-sink-without-plumber
   - /blog/why-your-dishwasher-smells-and-how-to-fix-it-in-10-minutes
 schema_type: Article
@@ -143,7 +143,7 @@ Continuing to run a machine with a seized pump will burn out the motor. What mig
 
 A licensed appliance repairer in Sydney will typically charge a call-out fee of about $120 to $150, then parts and labour on top. For a pump replacement on a mid-range front loader, call it $350 all up, give or take — though honestly we've seen $280 and we've seen $480 for the same job depending on the brand and the suburb.
 
-For Wenest members, we coordinate appliance repairs through [our appliance service](/services/appliances) — no sourcing a repairer, no waiting on callbacks, no wondering if the quote is reasonable.
+For Wenest members, we coordinate appliance repairs through [our appliance service](/pricing) — no sourcing a repairer, no waiting on callbacks, no wondering if the quote is reasonable.
 
 ## The Wenest take
 
@@ -153,30 +153,8 @@ The point isn't that repairers are incompetent. The point is that a machine jamm
 
 *This article is general guidance only. Any electrical work in NSW must be performed by a licensed tradesperson — see [NSW Fair Trading](https://www.fairtrading.nsw.gov.au/) for licence verification.*
 
-## Frequently asked questions
-
-### Why is my washing machine not draining in Sydney hard water areas?
-
-Hard water accelerates lint and mineral build-up in the pump filter, which is more common in parts of Western Sydney and the Hills District. Clean the pump filter every three months rather than every six if you're in a hard water area. Sydney Water publishes hardness data by zone — it's worth checking if you're seeing recurring drain issues.
-
-### How do I clean my washing machine filter?
-
-Locate the small access panel at the bottom front of your front loader. Place a shallow tray and old towels underneath — there will be water. Unscrew the filter cap slowly, let the water drain, then pull the filter out and rinse it under a tap. Remove any lint, coins, hair ties, or debris. Screw it back firmly. The whole job takes about 15 minutes.
-
-### Can a blocked standpipe cause a washing machine to not drain?
-
-Yes. If the standpipe — the vertical pipe your drain hose empties into — is partially blocked with soap scum or lint, water backs up and the machine reads it as a drain fault. Try pouring boiling water down the standpipe first. If the blockage is deeper, the fix is the same as unblocking a kitchen drain — see our guide on [unblocking a sink without a plumber](/blog/unblock-kitchen-sink-without-plumber).
-
-### My front loader won't drain — is it the pump?
-
-Possibly, but the pump is usually the last thing to fail, not the first. Before assuming pump failure, check the filter (90% of front loader drain faults start here), then the drain hose for kinks, then the standpipe. If all three are clear and the machine still won't drain, the pump motor or control board may be faulty — that's a job for a licensed appliance repairer.
-
-### When should I stop DIYing and call an appliance repairer?
-
-Stop and call when: the filter is clear and the hose is unkinked but the machine still won't drain; you can hear the pump humming but no water moves; the machine shows an error code that doesn't clear after a reset; or there's visible water damage under the machine. Continuing to run a faulty pump can burn out the motor entirely, turning a $180 repair into a $600 one.
-
 ---
 
-If chasing down an appliance repairer, waiting for a callback, and wondering whether the quote is fair sounds like a bad way to spend a Saturday — that's exactly what [Wenest membership](/membership) handles. We coordinate the repair, vet the repairer, and follow up so you don't have to.
+If chasing down an appliance repairer, waiting for a callback, and wondering whether the quote is fair sounds like a bad way to spend a Saturday — that's exactly what [Wenest membership](/pricing) handles. We coordinate the repair, vet the repairer, and follow up so you don't have to.
 
 Or fix the filter yourself. It takes 15 minutes and it's probably that.

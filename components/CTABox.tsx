@@ -14,7 +14,7 @@ export default function CTABox() {
         jobs are quoted separately, 50% upfront and 50% on completion.
       </p>
       <a
-        href="https://wenest.com.au/membership"
+        href="https://wenest.com.au/pricing"
         rel="noopener noreferrer"
         target="_blank"
         className="inline-block bg-ink text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-accent transition-colors"

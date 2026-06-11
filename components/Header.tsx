@@ -36,7 +36,7 @@ export default function Header() {
         </nav>
 
         <a
-          href="https://www.wenest.com.au/membership"
+          href="https://www.wenest.com.au/pricing"
           className="text-sm bg-ink text-background px-5 py-2.5 rounded-full hover:bg-gold transition-colors font-medium"
         >
           Membership

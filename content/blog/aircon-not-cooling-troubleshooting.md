@@ -7,7 +7,7 @@ secondary_keywords: ["split system not cooling", "ducted aircon weak airflow", "
 bucket: "how-to"
 status: "published"
 target_word_count: 1400
-internal_links: ["/services/hvac", "/membership"]
+internal_links: ["/pricing", "/"]
 schema_type: "Article"
 faq: true
 faq_items:
@@ -120,24 +120,6 @@ In the homes we work in across Sydney, the version of this that actually fails i
 
 The second most common? Filter neglect. We've pulled filters out of split systems in the Eastern Suburbs that haven't been cleaned in two years. The airflow was so weak the evaporator coil was icing up every night.
 
-If you'd rather not be the one remembering to clean filters every six weeks or crawling around the side of the house with a hose, that's literally what [Wenest members](/membership) get — scheduled maintenance before things stop working.
+If you'd rather not be the one remembering to clean filters every six weeks or crawling around the side of the house with a hose, that's literally what [Wenest members](/pricing) get — scheduled maintenance before things stop working.
 
-## Frequently asked questions
-
-### Why is my split system running but not cooling the room?
-
-Most often it's a dirty filter restricting airflow, or the outdoor unit is blocked by debris. Check both before calling a technician. If the compressor isn't running at all (the outdoor unit is silent), it could be a thermostat issue or electrical fault requiring a licensed HVAC tech.
-
-### How do I know if my aircon is low on refrigerant?
-
-Signs include ice buildup on the indoor coil or copper lines, weak airflow even with a clean filter, and the outdoor unit running constantly without cooling. Refrigerant doesn't 'run out' — a leak is always the cause. Only a licensed technician can legally top up refrigerant in Australia.
-
-### Can I run my aircon if it's not cooling properly?
-
-Not for long. Running an aircon with a refrigerant leak or blocked condenser can damage the compressor — an expensive repair. If you've checked the filter and thermostat and it's still not cooling, turn it off and book a service call.
-
-### How often should I clean my aircon filter in Sydney?
-
-Every 4 to 6 weeks during summer if you're running it daily. More often if you have pets or live near the beach (salt air clogs filters faster). A clogged filter is the single most common cause of weak cooling we see in Sydney homes.
-
-If none of the above fixes it, or you'd rather hand the whole thing off, [Wenest coordinates HVAC maintenance](/services/hvac) for members across Sydney. We schedule it before you notice the problem.
+If none of the above fixes it, or you'd rather hand the whole thing off, [Wenest coordinates HVAC maintenance](/pricing) for members across Sydney. We schedule it before you notice the problem.

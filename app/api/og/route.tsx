@@ -43,7 +43,7 @@ export async function GET(req: Request) {
               fontWeight: 600,
             }}
           >
-            Wenest · {category}
+            {`Wenest · ${category}`}
           </div>
         </div>
 

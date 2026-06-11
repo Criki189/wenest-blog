@@ -28,8 +28,10 @@ export const MAX_ARTICLES_PER_RUN = 1;
  * blog CLAUDE.md §4 "Hard out" + memory/topic-blacklist.md). Flip a flag to
  * true if you ever decide to cover one of them.
  *
- * `path` is the live `/services/...` page (all verified to return 200) used as
- * a relevant internal link in the article CTA.
+ * `path` is the landing's `/services/...` page. NOTE (2026-06-12): these pages
+ * currently return 404 on wenest.com.au, so auto-publish no longer uses them
+ * as internal links (it links to `/pricing` instead). Kept for the day the
+ * service pages go live.
  * `coverTheme` selects a fallback cover image when no Unsplash key is set.
  */
 export type Service = {

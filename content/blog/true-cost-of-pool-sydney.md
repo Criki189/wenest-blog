@@ -7,7 +7,7 @@ secondary_keywords: ["Sydney pool running cost", "pool ownership AUD", "pool mai
 bucket: "home-operations"
 status: "published"
 target_word_count: 1800
-internal_links: ["/membership", "/services/pool"]
+internal_links: ["/pricing", "/"]
 schema_type: "Article"
 faq: true
 faq_items:
@@ -124,26 +124,4 @@ If the pool is leaking and you can't find the source after two attempts, the rep
 
 Honestly nobody knows why some pools leak and others don't after 25 years. The ones that do are expensive to fix.
 
-## Frequently asked questions
-
-### How much does it cost to run a pool in Sydney per year?
-
-Most Sydney pool owners spend $2,800 to $4,200 annually when you account for chemicals, electricity, water, repairs, and council rates. The electricity alone for a standard pump running 8 hours daily is $600–$900. That figure doesn't include one-off repairs like resurfacing or equipment replacement, which can add thousands in any given year.
-
-### What are the hidden costs of pool ownership in Sydney?
-
-The iceberg costs are council rates (pools add $150–$300 to your annual bill), insurance loading (around $80–$150 extra per year), water loss from evaporation in summer (roughly $200–$350 annually), and the compounding cost of deferred maintenance. A cracked tile you ignore in year one becomes a $4,000 resurfacing job in year three.
-
-### Is a saltwater pool cheaper to run than chlorine in Sydney?
-
-Saltwater systems cost more upfront ($1,800–$3,500 installed) but reduce ongoing chemical expenses by about 40%. You'll spend $300–$500 per year on salt and stabiliser instead of $500–$800 on chlorine. The chlorinator cell needs replacing every 3–5 years at $600–$1,200. Over a decade, saltwater is marginally cheaper if you factor in time saved on chemical balancing.
-
-### How much does pool equipment replacement cost in Sydney?
-
-A new variable-speed pump costs $800–$1,600 plus installation ($200–$400). Filters range from $400 for cartridge models to $1,200 for sand or DE filters. Heaters are $2,500–$6,000 depending on type. Chlorinators run $600–$1,200 for the cell alone. Budget for at least one major equipment replacement every 5–7 years.
-
-### Can you reduce pool running costs in Sydney without sacrificing water quality?
-
-Switching to a variable-speed pump saves $300–$500 per year in electricity. Running the pump during off-peak hours (10pm–7am on most Sydney plans) cuts costs by 30–40%. A pool cover reduces evaporation, saving $150–$250 annually on water and chemicals. Dialling back heating by 2°C saves roughly $200 per season. Those four changes together can halve your running costs without affecting swim quality.
-
-If managing pump schedules, chemical testing, and tradie callouts feels like a part-time job you didn't sign up for, that's because it is. [Wenest coordinates pool maintenance](/services/pool) (and everything else that breaks in a Sydney home) so you don't have to chase three quotes and wait two weeks for a callback. [See how it works](/membership).
+If managing pump schedules, chemical testing, and tradie callouts feels like a part-time job you didn't sign up for, that's because it is. Wenest coordinates pool maintenance (and everything else that breaks in a Sydney home) so you don't have to chase three quotes and wait two weeks for a callback. [See how it works](/pricing).

@@ -13,8 +13,8 @@ bucket: transactional
 status: published
 target_word_count: 1772
 internal_links:
-  - /membership
-  - /services/moving
+  - /pricing
+  - /
   - /blog/power-keeps-tripping
 schema_type: Article
 faq: true
@@ -173,28 +173,6 @@ Why this is enforceable in NSW and not always in other states is a longer story 
 
 *This article is general guidance only. Any electrical or gas work in NSW must be performed by a licensed tradesperson — see [NSW Fair Trading](https://www.fairtrading.nsw.gov.au/) for licence verification.*
 
-## Frequently asked questions
-
-### Do I need a licensed electrician to check my switchboard when moving house in Sydney?
-
-Yes. Any work on your switchboard, including safety-switch testing and installation, must be carried out by a licensed electrician in NSW. A general handyman cannot legally touch it. You can verify a tradesperson's electrical licence through NSW Fair Trading before booking.
-
-### How much does it cost to rekey a house in Sydney?
-
-Rekeying a standard three-bedroom Sydney home typically runs around $180 to $280 plus GST, depending on the number of cylinders and the locksmith's call-out fee. Full lock replacement costs more — budget around $120 to $180 per lock for mid-range hardware. Always use a licensed locksmith for new homes.
-
-### Do I need a pest inspection when moving into a new home in Sydney?
-
-It's strongly advisable, especially in older suburbs or homes with timber floors and framing. A combined building and pest inspection before settlement is standard, but a standalone pest inspection at move-in is worth doing if you didn't get one — termite activity can develop quickly in Sydney's climate.
-
-### What trades do I need when moving out of a rental in Sydney?
-
-For a rental vacate in Sydney, you'll typically need a bond cleaner, a carpet cleaner (if carpeted), a pest controller for flea treatment if you had pets, and a handyman for any minor repairs like wall patching or blind replacement. Electrical and plumbing repairs must go to licensed trades.
-
-### Can I do my own plumbing when moving house in NSW?
-
-Not for most work. In NSW, any plumbing that connects to the water supply or drainage system must be done by a licensed plumber. That includes fixing dripping taps, replacing hot water systems, and installing dishwashers. You can legally replace a tap washer yourself, but anything beyond that carries real risk.
-
 ---
 
-If managing six separate tradie bookings in the middle of a move sounds like a part-time job — that's because it is. Wenest coordinates the whole sequence for our members, from the pest inspector to the locksmith, in the right order, with licensed trades we've already vetted. [See how it works](/membership).
+If managing six separate tradie bookings in the middle of a move sounds like a part-time job — that's because it is. Wenest coordinates the whole sequence for our members, from the pest inspector to the locksmith, in the right order, with licensed trades we've already vetted. [See how it works](/pricing).

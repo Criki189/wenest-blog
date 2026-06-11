@@ -13,8 +13,8 @@ bucket: how-to
 status: published
 target_word_count: 1682
 internal_links:
-  - /membership
-  - /services/electrical
+  - /pricing
+  - /
   - /blog/power-keeps-tripping
 schema_type: Article
 faq: true
@@ -137,26 +137,8 @@ The cheapest quote to diagnose a tripping RCD is not always the right call — w
 
 *This article is general guidance only. Any electrical work in NSW must be performed by a licensed tradesperson — see [NSW Fair Trading](https://www.fairtrading.nsw.gov.au/) for licence verification.*
 
-## Frequently asked questions
-
-### Why does my safety switch keep tripping?
-
-A safety switch trips when it detects a fault current — electricity leaking outside its intended path, usually through a faulty appliance, damaged wiring, or moisture in a circuit. If yours trips repeatedly, the cause hasn't been fixed. Resetting without finding the fault just resets the symptom. An electrician can run an insulation resistance test to locate the source in under an hour.
-
-### Is it safe to reset a safety switch yourself?
-
-Yes, resetting the switch itself is safe — you're flipping a lever, not touching live wiring. What's not safe is resetting it repeatedly when it keeps tripping, or assuming the trip was a one-off when it wasn't. One reset to identify whether an appliance caused it is fine. Three resets in a week without finding the cause means you need a licensed electrician.
-
-### What is the difference between a safety switch and a circuit breaker?
-
-A circuit breaker protects the wiring from overload — it trips when too much current flows. A safety switch (RCD) protects people from electrocution — it trips when current leaks to earth, which can happen even at levels too low to blow a fuse. You can have both in the same switchboard. They look similar but do different jobs.
-
-### How long does it take an electrician to diagnose a tripping safety switch?
-
-Most straightforward faults take 45 minutes to an hour to diagnose. An electrician will run an insulation resistance test on each circuit, identify the leaking one, then trace the fault to the appliance or cable. Complex faults in older homes — Federation or pre-war wiring — can take two to three hours if the wiring is buried in original conduit.
-
 ---
 
 If you'd rather not spend your Tuesday night googling switchboard diagrams while dinner goes cold, that's exactly the kind of problem we handle for our members. Wenest coordinates licensed electricians across Sydney — same-week in most cases — so the fault gets properly diagnosed, not just reset.
 
-[See how Wenest works for Sydney homeowners](/membership).
+[See how Wenest works for Sydney homeowners](/pricing).

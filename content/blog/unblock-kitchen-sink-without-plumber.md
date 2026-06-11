@@ -7,7 +7,7 @@ secondary_keywords: ["blocked sink drain", "kitchen sink not draining", "DIY sin
 bucket: "how-to"
 status: "published"
 target_word_count: 1500
-internal_links: ["/membership", "/services/plumbing"]
+internal_links: ["/pricing", "/"]
 schema_type: "Article"
 faq: true
 faq_items:
@@ -101,23 +101,5 @@ You should stop trying to fix it yourself if:
 The cheapest quote is almost always the most expensive job. A licensed plumber will charge $180 to $280 plus GST for a standard call-out and blockage clear in Sydney. If they need to use a high-pressure jet or cut into the wall, that's $400 to $800. If you try to save $200 and crack a pipe in the process, you're looking at a much bigger bill.
 
 *This article is general guidance only. Any work involving cutting into pipes or accessing shared plumbing in a strata building must be performed by a licensed plumber — see [NSW Fair Trading](https://www.fairtrading.nsw.gov.au/) for licence verification.*
-
-## Frequently asked questions
-
-### How long does it take to unblock a kitchen sink?
-
-Most blockages clear in 10 to 30 minutes using a plunger or drain snake. If you've tried both methods for 20 minutes without progress, the blockage is likely deeper in the pipe or in the trap itself. At that point, you're looking at removing the P-trap or calling someone in.
-
-### Can I use Drano or chemical drain cleaner on my kitchen sink?
-
-We've stopped recommending chemical drain cleaners for kitchen sinks. They rarely work on grease blockages, they can damage older PVC pipes, and if the blockage doesn't clear, you're left with caustic water sitting in the sink. Boiling water and a plunger are safer and just as effective for most clogs.
-
-### What causes kitchen sinks to block in Sydney homes?
-
-Grease and cooking oil are the main culprits. They coat the inside of pipes and trap food scraps, coffee grounds, and soap residue. In older homes with cast iron or galvanised pipes, rust and scale buildup narrow the pipe diameter over time, making blockages more frequent.
-
-### When should I call a plumber instead of DIY?
-
-Call a licensed plumber if water backs up into other fixtures when you run the sink, if you've removed the P-trap and the blockage is further down, or if the sink has been slow-draining for weeks despite your attempts. Also call if you're in a strata building and suspect the blockage is in a shared stack.
 
 If you'd rather not be the one pulling apart pipes under the sink at 7 AM — that's literally why we exist. Wenest members get this handled without the calls. [See how Wenest works](/).

@@ -361,7 +361,10 @@ function renderSystemPrompt(topic: Topic, coverUrl: string, coverAlt: string, in
 }
 
 function buildInternalLinks(service: Service): string[] {
-  const links = ["/", "/membership", service.path];
+  // /membership is a 308 redirect to /pricing, and the landing's /services/*
+  // pages (service.path) currently return 404 — only link to live URLs.
+  void service;
+  const links = ["/", "/pricing"];
   const blogSlugs = existingSlugs();
   // up to 3 existing articles for cross-linking
   for (const slug of blogSlugs.sort(() => Math.random() - 0.5).slice(0, 3)) {
@@ -421,7 +424,7 @@ async function generateArticle(
   if (!data.cover_image_alt || String(data.cover_image_alt).length < 3) data.cover_image_alt = coverAlt;
   data.target_word_count = Number(data.target_word_count) || topic.target_word_count;
   if (!data.internal_links || !Array.isArray(data.internal_links) || data.internal_links.length === 0) {
-    data.internal_links = ["/membership", service.path];
+    data.internal_links = ["/pricing", "/"];
   }
 
   const markdown = matter.stringify(parsed.content, data);

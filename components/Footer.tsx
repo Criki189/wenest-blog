@@ -31,7 +31,7 @@ export default function Footer() {
           <p className="text-ink font-semibold mb-2">Wenest</p>
           <ul className="space-y-1 text-muted">
             <li><a href="https://wenest.com.au" className="hover:text-ink">wenest.com.au</a></li>
-            <li><a href="https://wenest.com.au/membership" className="hover:text-ink">Membership</a></li>
+            <li><a href="https://wenest.com.au/pricing" className="hover:text-ink">Membership</a></li>
             <li><Link href="/" className="hover:text-ink">Journal home</Link></li>
           </ul>
           <p className="text-muted mt-4 text-xs">

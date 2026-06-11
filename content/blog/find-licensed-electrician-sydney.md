@@ -7,7 +7,7 @@ secondary_keywords: ["how to verify electrician licence NSW", "hiring electricia
 bucket: "transactional"
 status: "published"
 target_word_count: 1500
-internal_links: ["/membership", "/services/electrical", "/"]
+internal_links: ["/pricing", "/"]
 schema_type: "Article"
 faq: true
 faq_items:
@@ -135,28 +135,6 @@ Here's what works: get three quotes. Verify all three licences. Hire the one who
 
 *This article is general guidance only. Any electrical work in NSW must be performed by a licensed tradesperson — see [NSW Fair Trading](https://www.fairtrading.nsw.gov.au/) for licence verification.*
 
-## Frequently asked questions
-
-### How do I check if an electrician is licensed in NSW?
-
-Visit the NSW Fair Trading website and use their licence search tool. Enter the electrician's name or licence number. A valid licence will show the person's name, licence number, class, and expiry date. If they can't provide a licence number on the spot, that's your first red flag.
-
-### What questions should I ask an electrician before hiring them?
-
-Ask for their licence number and verify it yourself. Ask if they carry public liability insurance (minimum $10 million for electrical work). Get a written quote with a breakdown of labour, materials, and GST. Ask how they handle variations and additional costs. If they're vague on any of these, keep looking.
-
-### Can an electrician work in Sydney without a licence?
-
-No. All electrical work in NSW must be performed by someone holding a current electrical contractor licence or working under direct supervision of a licence holder. Unlicensed electrical work is illegal, uninsured, and dangerous. If something goes wrong, your home insurance won't cover it.
-
-### What's the difference between an electrical contractor licence and an electrician licence?
-
-An electrician licence allows someone to perform electrical work. An electrical contractor licence allows them to run a business, quote jobs, and take payment. If you're hiring someone to do paid work in your home, they need a contractor licence — not just a tradesperson licence.
-
-### How much does a licensed electrician cost in Sydney?
-
-Service call-outs typically start around $180 to $280 including GST, depending on the suburb and time of day. Hourly rates range from $120 to $200 plus materials. Jobs quoted as fixed-price (switchboard upgrades, rewiring, new circuits) vary widely — expect $800 to $3,500 for common residential work. Always get three quotes.
-
 ---
 
-If you'd rather not spend your afternoon verifying licences and chasing quotes, that's what [Wenest members](/membership) don't have to do. We coordinate licensed sparkies, plumbers, and every other tradie you'll need — vetted once, called when you need them.
+If you'd rather not spend your afternoon verifying licences and chasing quotes, that's what [Wenest members](/pricing) don't have to do. We coordinate licensed sparkies, plumbers, and every other tradie you'll need — vetted once, called when you need them.

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getAllArticles } from "@/lib/content";
+import { SITE, absoluteBlogUrl } from "@/lib/site";
 import { BUCKETS } from "@/lib/buckets";
 import ArticleCard from "@/components/ArticleCard";
 import CategoryCard from "@/components/CategoryCard";
@@ -17,8 +18,31 @@ export default async function Landing() {
     counts.set(a.frontmatter.bucket, (counts.get(a.frontmatter.bucket) || 0) + 1);
   }
 
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "The Wenest Journal",
+    description: SITE.description,
+    url: absoluteBlogUrl(),
+    inLanguage: "en-AU",
+    publisher: { "@type": "Organization", name: SITE.name, url: SITE.url },
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: articles.map((a, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: a.frontmatter.title,
+        url: absoluteBlogUrl(`/${a.slug}`),
+      })),
+    },
+  };
+
   return (
     <div className="max-w-6xl mx-auto px-6">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
       <section className="pt-20 pb-12 max-w-3xl">
         <p className="text-xs uppercase tracking-widest text-accent font-semibold mb-5">
           The Wenest Journal

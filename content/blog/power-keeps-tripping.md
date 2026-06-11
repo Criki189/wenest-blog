@@ -7,7 +7,7 @@ secondary_keywords: ["RCD keeps tripping Australia", "safety switch trips", "pow
 bucket: "problems"
 status: "published"
 target_word_count: 1400
-internal_links: ["/membership", "/services/electrical"]
+internal_links: ["/pricing", "/"]
 schema_type: "Article"
 faq: true
 faq_items:
@@ -115,24 +115,6 @@ If they quote you without doing steps 1 and 2, they're guessing. Walk away.
 
 *This article is general guidance only. Any electrical work in NSW must be performed by a licensed tradesperson — see [NSW Fair Trading](https://www.fairtrading.nsw.gov.au/) for licence verification.*
 
-## Frequently asked questions
-
-### What's the difference between a circuit breaker and an RCD in Australia?
-
-A circuit breaker protects your wiring from overload — too many appliances on one circuit. An RCD (residual current device, also called a safety switch) detects current leakage and cuts power in milliseconds to prevent electrocution. Both live in your switchboard. RCDs are mandatory in NSW for power points and lighting circuits.
-
-### Why does my RCD trip when it rains in Sydney?
-
-Water ingress into outdoor power points, garden lights, or pool equipment causes current leakage. The RCD detects it and trips. Common culprits: cracked outdoor sockets, corroded junction boxes, or poorly sealed garden spike lights. If it only trips during or after rain, start with outdoor circuits.
-
-### Can I just reset the switch and ignore it?
-
-If it trips once and stays on after reset, probably fine — could be a momentary surge. If it trips repeatedly (twice in a day, three times in a week), you have a fault. Ignoring it means either living without power on that circuit or risking a fire or shock hazard. Get it checked.
-
-### How much does it cost to fix a tripping circuit breaker in Sydney?
-
-Depends entirely on the cause. If it's a faulty appliance you can unplug yourself, $0. If it's a worn RCD that needs replacing, $180 to $280 plus GST for the part and labour. If it's a wiring fault behind walls, could be $400 to $800. No sparkie quotes this consistently — you'll get three answers from three electricians.
-
 ---
 
-If you'd rather not be the one standing in the hallway at 9:30 PM resetting switches and googling "RCD keeps tripping" — that's literally why we exist. Wenest members get this handled without the calls. [See how it works](/membership).
+If you'd rather not be the one standing in the hallway at 9:30 PM resetting switches and googling "RCD keeps tripping" — that's literally why we exist. Wenest members get this handled without the calls. [See how it works](/pricing).

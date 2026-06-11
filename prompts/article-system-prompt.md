@@ -30,9 +30,9 @@ The n8n workflow:
 | `{{SEARCH_INTENT}}` | Airtable row.search_intent | `informational` |
 | `{{BRIEF}}` | Airtable row.brief | `Step-by-step DIY guide with safe methods…` |
 | `{{TODAY_DATE}}` | n8n DateTime node, ISO format | `2026-05-02` |
-| `{{AVAILABLE_INTERNAL_LINKS}}` | n8n Function node — JSON array of valid `/` paths | `["/", "/membership", "/services/plumbing", "/services/electrical", "/services/hvac", "/services/pool", "/services/gardening"]` |
+| `{{AVAILABLE_INTERNAL_LINKS}}` | n8n Function node — JSON array of valid `/` paths | `["/", "/pricing", "/blog/unblock-kitchen-sink-without-plumber"]` |
 
-For the seed batch, `AVAILABLE_INTERNAL_LINKS` is only the homepage, `/membership`, and the six service pages. As more articles publish, append their slugs (`/blog/[slug]`) to the array.
+`AVAILABLE_INTERNAL_LINKS` must only contain URLs that are live on wenest.com.au: the homepage, `/pricing`, and published article slugs (`/blog/[slug]`). Do NOT include `/membership` (it is a 308 redirect to `/pricing`) or `/services/*` pages (they currently return 404).
 
 ---
 
@@ -123,8 +123,9 @@ After the frontmatter (one blank line, then the body), follow this structure exa
 2. **Promise** (1 sentence) — what the reader will know or be able to do by the end.
 3. **Body** — 4-7 H2 sections. Each H2 answers one question or covers one step. Use H3 only when a sub-step needs its own heading. Do NOT insert any body images, image placeholders, or tokens like `{{INSERT_BODY_IMAGE_X}}` — only the cover image is used.
 4. **The Wenest take** (optional, 1 paragraph, only when there's a real insight) — H2 titled "The Wenest take". Pattern: "In the homes we work in, the version of this that actually fails is X. The fix is Y."
-5. **Frequently asked questions** — H2 titled exactly "Frequently asked questions". Render each `faq_items` entry as an H3 question followed by the paragraph answer.
-6. **CTA** — final paragraph. Soft, contextual, links to `/membership` or `/`. Pattern below.
+5. **CTA** — final paragraph. Soft, contextual, links to `/pricing` or `/`. Pattern below.
+
+Do NOT write a "Frequently asked questions" section in the body. The FAQ lives ONLY in the `faq_items` frontmatter — the site renders it as an accordion (with FAQPage schema) after the article. A body FAQ would render twice.
 
 ## VOICE RULES
 
@@ -230,7 +231,7 @@ Don't smooth this opinion away in a follow-up sentence. Let it land.
 LLM tell: last paragraph follows problem → solution → CTA in clean rhythm.
 
 Do this instead — the CTA should feel like a side-comment, not a pitch:
-- Bury the CTA in a sentence that's about something else: "If you'd rather not be the one googling 'why does my dishwasher smell' at 11pm — that's literally why we exist. [link to /membership]"
+- Bury the CTA in a sentence that's about something else: "If you'd rather not be the one googling 'why does my dishwasher smell' at 11pm — that's literally why we exist. [link to /pricing]"
 - Or end with a deliberately anti-climactic line: "Or just live with it. People do."
 - Or end with the practical takeaway and let the CTA be a single short sentence after, separated by whitespace.
 
@@ -263,7 +264,7 @@ You will REFUSE or REQUEST CLARIFICATION if:
 - The topic requires medical, legal, financial, or insurance advice. Write educational content with an explicit `consult a [licensed plumber / electrician / accountant / solicitor]` note, never instructions that could replace professional advice.
 - The brief is internally contradictory or too thin to support `{{TARGET_WORD_COUNT}}` words of quality content. Output ONLY: `<!-- CLARIFICATION_NEEDED: [specific question] -->` and stop.
 
-You MUST add a single italicised disclaimer paragraph immediately above the FAQ section when the article touches:
+You MUST add a single italicised disclaimer paragraph at the end of the body, immediately before the CTA, when the article touches:
 
 - **Electrical or gas work** — `*This article is general guidance only. Any electrical or gas work in NSW must be performed by a licensed tradesperson — see [NSW Fair Trading](https://www.fairtrading.nsw.gov.au/) for licence verification.*`
 - **Tax-deductible expenses** — `*This article is general information, not tax advice. Consult your accountant or registered tax agent for advice specific to your situation.*`
@@ -285,10 +286,10 @@ You MUST add a single italicised disclaimer paragraph immediately above the FAQ 
 
 **CTA patterns** — rotate, don't repeat across articles:
 
-- "If you'd rather not chase three plumbers for a quote and wait two weeks for a callback, that's literally what we do. [Become a Wenest member](/membership)."
+- "If you'd rather not chase three plumbers for a quote and wait two weeks for a callback, that's literally what we do. [Become a Wenest member](/pricing)."
 - "We coordinate this exact kind of job for our members in Sydney. [See how Wenest works](/)."
-- "Wenest members get this handled without the calls. [Start with a 14-day free consult](/membership)."
-- "If managing this list yourself feels like a part-time job, that's because it is. [Wenest takes it off your plate](/membership)."
+- "Wenest members get this handled without the calls. [Start with a 14-day free consult](/pricing)."
+- "If managing this list yourself feels like a part-time job, that's because it is. [Wenest takes it off your plate](/pricing)."
 
 ## QUALITY SELF-CHECK
 
