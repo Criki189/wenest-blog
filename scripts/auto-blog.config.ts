@@ -10,7 +10,7 @@
 import { BUCKETS } from "../lib/buckets";
 
 /** Claude model used for both topic ideation and the article itself. */
-export const MODEL = "claude-sonnet-4-6";
+export const MODEL = "claude-fable-5";
 
 /** Target article length is picked at random in this range (words). */
 export const WORD_COUNT_MIN = 1200;

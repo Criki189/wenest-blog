@@ -124,7 +124,8 @@ async function telegram(text: string, level: "ok" | "warn" | "error" | "info" = 
 // ---------------------------------------------------------------------------
 // Claude
 // ---------------------------------------------------------------------------
-type ClaudeOpts = { system?: string; user: string; maxTokens: number; temperature: number };
+// Sin `temperature`: claude-fable-5 rechaza los parámetros de sampling (HTTP 400).
+type ClaudeOpts = { system?: string; user: string; maxTokens: number };
 
 /**
  * Two backends, picked automatically:
@@ -142,7 +143,6 @@ async function claudeApi(opts: ClaudeOpts, key: string): Promise<string> {
   const body: Record<string, unknown> = {
     model: MODEL,
     max_tokens: opts.maxTokens,
-    temperature: opts.temperature,
     messages: [{ role: "user", content: opts.user }],
   };
   if (opts.system) body.system = opts.system;
@@ -180,7 +180,7 @@ function claudeCli(opts: ClaudeOpts): string {
     // from the repo (no project CLAUDE.md, no chance of touching files).
     const out = execFileSync(
       "claude",
-      ["-p", "--model", "sonnet", "--mcp-config", '{"mcpServers":{}}', "--strict-mcp-config", "--max-turns", "6"],
+      ["-p", "--model", MODEL, "--mcp-config", '{"mcpServers":{}}', "--strict-mcp-config", "--max-turns", "6"],
       {
         input: prompt,
         encoding: "utf8",
@@ -284,7 +284,7 @@ Return ONLY a JSON object, no prose, with exactly these keys:
   "cover_image_query": "3-5 photographic search terms for the cover, no brand names"
 }`;
 
-  const raw = await claude({ system, user, maxTokens: 1024, temperature: 0.9 });
+  const raw = await claude({ system, user, maxTokens: 1024 });
   const j = extractJson(raw);
   const topic: Topic = {
     title: String(j.title || "").trim(),
@@ -399,7 +399,6 @@ async function generateArticle(
     system,
     user: "Generate the article now.",
     maxTokens: 8000,
-    temperature: 0.7,
   });
   let article = stripFences(raw);
   // Drop any preamble before the frontmatter, and a stray trailing code fence.
