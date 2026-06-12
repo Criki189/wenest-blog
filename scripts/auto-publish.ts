@@ -448,6 +448,25 @@ function validate(data: Record<string, any>, slug: string): string[] {
 // ---------------------------------------------------------------------------
 // git publish
 // ---------------------------------------------------------------------------
+// Poll the live URL until the new post answers 200 (Vercel deploy finished).
+// Cache-buster query + no-cache header so a CDN-cached 404 can't fool us.
+async function waitForLive(url: string, timeoutMs = 10 * 60_000): Promise<boolean> {
+  const start = Date.now();
+  while (Date.now() - start < timeoutMs) {
+    try {
+      const r = await fetch(`${url}?cb=${Date.now()}`, {
+        headers: { "cache-control": "no-cache" },
+        redirect: "follow",
+      });
+      if (r.ok) return true;
+    } catch {
+      // network blip — keep polling
+    }
+    await new Promise((res) => setTimeout(res, 15_000));
+  }
+  return false;
+}
+
 function gitPublish(slug: string, title: string) {
   const sh = (cmd: string) => execSync(cmd, { cwd: REPO, stdio: "pipe" }).toString().trim();
   sh("git checkout main");
@@ -507,7 +526,16 @@ async function main() {
   const liveUrl = absoluteBlogUrl(`/${topic.slug}`);
   if (PUBLISH) {
     gitPublish(topic.slug, built.data.title || topic.title);
-    await telegram(`Blog publicado: "${built.data.title}"\n${liveUrl}\nServicio: ${service.label} · ${bucketName(bucket)}`, "ok");
+    // Vercel takes ~1-3 min to build after the push. Notifying immediately
+    // hands out a link that 404s until the deploy finishes — wait for the
+    // post to answer 200 on the live domain before sending the link.
+    console.log(`[deploy] waiting for ${liveUrl} to go live…`);
+    const live = await waitForLive(liveUrl);
+    if (live) {
+      await telegram(`Blog publicado: "${built.data.title}"\n${liveUrl}\nServicio: ${service.label} · ${bucketName(bucket)}`, "ok");
+    } else {
+      await telegram(`Blog: el post "${built.data.title}" se subió (commit en main) pero ${liveUrl} sigue sin responder tras 10 min. El deploy de Vercel puede haber fallado — revísalo.`, "warn");
+    }
     console.log(`[done] published → ${liveUrl}`);
   } else {
     console.log(`[dry-run] article generated + validated. Would publish at: ${liveUrl}`);
