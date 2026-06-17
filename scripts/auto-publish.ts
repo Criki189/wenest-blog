@@ -134,9 +134,49 @@ type ClaudeOpts = { system?: string; user: string; maxTokens: number };
  *    already-authenticated session. No API key required. This is the default
  *    here because agents/.env ships ANTHROPIC_API_KEY empty.
  */
+function opencodeKey(): string {
+  return (process.env.OPENCODE_GO_API_KEY || process.env.OPENCODE_ZEN_API_KEY ||
+          process.env.OPENCODE_API_KEY || "").trim();
+}
+
+// Interruptor LLM_PROVIDER: 'opencode' (GLM-5.1 gratis, por defecto si hay clave) | 'anthropic' (Claude).
 async function claude(opts: ClaudeOpts): Promise<string> {
+  const provider = (process.env.LLM_PROVIDER || "anthropic").trim().toLowerCase();
+  const ocKey = opencodeKey();
+  if (provider !== "anthropic" && ocKey) return claudeOpenCode(opts, ocKey);
   const key = (process.env.ANTHROPIC_API_KEY || "").trim();
   return key ? claudeApi(opts, key) : claudeCli(opts);
+}
+
+// GLM-5.1 vía OpenCode (formato OpenAI). Razonamiento apagado → rápido y no devuelve vacío.
+// User-Agent de navegador: opencode.ai está tras Cloudflare y bloquea el UA por defecto (error 1010).
+async function claudeOpenCode(opts: ClaudeOpts, key: string): Promise<string> {
+  const base = (process.env.OPENCODE_BASE_URL || "https://opencode.ai/zen/go/v1").replace(/\/+$/, "");
+  const model = process.env.OPENCODE_MODEL || "glm-5.1";
+  const messages: Array<{ role: string; content: string }> = [];
+  if (opts.system) messages.push({ role: "system", content: opts.system });
+  messages.push({ role: "user", content: opts.user });
+  const body: Record<string, unknown> = { model, max_tokens: opts.maxTokens, messages };
+  if (!model.toLowerCase().startsWith("deepseek")) body.reasoning_effort = "none";
+  const r = await fetch(`${base}/chat/completions`, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${key}`,
+      "content-type": "application/json",
+      Accept: "application/json",
+      "User-Agent":
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    },
+    body: JSON.stringify(body),
+  });
+  if (!r.ok) {
+    const errText = await r.text();
+    throw new Error(`OpenCode HTTP ${r.status}: ${errText.slice(0, 500)}`);
+  }
+  const data: any = await r.json();
+  const text = (data?.choices?.[0]?.message?.content ?? "").trim();
+  if (!text) throw new Error("OpenCode returned an empty response");
+  return text;
 }
 
 async function claudeApi(opts: ClaudeOpts, key: string): Promise<string> {
