@@ -355,25 +355,48 @@ async function pickTopic(service: Service, bucket: string): Promise<Topic> {
 // ---------------------------------------------------------------------------
 // cover image
 // ---------------------------------------------------------------------------
+// Stable identity of an Unsplash image, shared by saved cover URLs and fresh
+// search results (both look like .../photo-1556909114-f6e7ad7d3136?...). Used to
+// avoid handing a new post a cover another post already uses.
+const coverKey = (url: string): string => (/photo-[a-zA-Z0-9_-]+/.exec(url || "")?.[0] ?? url ?? "");
+
+function usedCoverKeys(): Set<string> {
+  const used = new Set<string>();
+  if (!fs.existsSync(POSTS_DIR)) return used;
+  for (const f of fs.readdirSync(POSTS_DIR).filter((x) => x.endsWith(".md"))) {
+    const cover = String(matter(fs.readFileSync(path.join(POSTS_DIR, f), "utf8")).data.cover_image ?? "");
+    if (cover) used.add(coverKey(cover));
+  }
+  return used;
+}
+
 async function pickCover(service: Service, query: string): Promise<string> {
+  const used = usedCoverKeys();
   const key = process.env.UNSPLASH_ACCESS_KEY;
   if (key) {
     try {
+      // Pull several candidates and take the first the blog isn't already using,
+      // so covers stay distinct across posts (de-dup). Fall back to the top hit
+      // if every candidate is taken.
       const url = `https://api.unsplash.com/search/photos?query=${encodeURIComponent(
         query + " Sydney home"
-      )}&per_page=1&orientation=landscape&content_filter=high`;
+      )}&per_page=15&orientation=landscape&content_filter=high`;
       const r = await fetch(url, { headers: { Authorization: `Client-ID ${key}` } });
       if (r.ok) {
         const data: any = await r.json();
-        const first = data?.results?.[0];
-        if (first?.urls?.regular) return first.urls.regular;
+        const results: any[] = Array.isArray(data?.results) ? data.results : [];
+        const fresh = results.find((p) => p?.urls?.regular && !used.has(coverKey(p.urls.regular)));
+        if (fresh?.urls?.regular) return fresh.urls.regular;
+        if (results[0]?.urls?.regular) return results[0].urls.regular;
       }
     } catch (e) {
       console.error(`[cover] Unsplash lookup failed, using fallback: ${(e as Error).message}`);
     }
   }
+  // Fallback pool (no key / lookup failed): prefer an image not already used.
   const pool = COVER_POOL[service.coverTheme] ?? COVER_POOL.general;
-  return pick(pool);
+  const freshPool = pool.filter((u) => !used.has(coverKey(u)));
+  return pick(freshPool.length ? freshPool : pool);
 }
 
 // ---------------------------------------------------------------------------

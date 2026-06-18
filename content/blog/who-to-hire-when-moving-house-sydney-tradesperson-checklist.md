@@ -54,7 +54,8 @@ faq_items:
       fixing dripping taps, replacing hot water systems, and installing
       dishwashers. You can legally replace a tap washer yourself, but anything
       beyond that carries real risk.
-cover_image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1600&q=80'
+cover_image: >-
+  https://images.unsplash.com/photo-1664186771909-cbbfb2c1e324?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDEyNjZ8MHwxfHNlYXJjaHwxfHxtb3ZpbmclMjBib3hlcyUyMGhhbGx3YXklMjBTeWRuZXklMjBob21lJTIwZnJvbnQlMjBkb29yJTIwa2V5c3xlbnwxfDB8fHwxNzgxNzQzNjg0fDA&ixlib=rb-4.1.0&q=80&w=1080
 cover_image_alt: >-
   who to hire when moving house Sydney — Sydney home with moving boxes in
   hallway

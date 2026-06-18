@@ -48,7 +48,8 @@ faq_items:
       identify the leaking one, then trace the fault to the appliance or cable.
       Complex faults in older homes — Federation or pre-war wiring — can take
       two to three hours if the wiring is buried in original conduit.
-cover_image: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=1600&q=80'
+cover_image: >-
+  https://images.unsplash.com/photo-1660330590022-9f4ff56b63f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDEyNjZ8MHwxfHNlYXJjaHwxfHxlbGVjdHJpY2FsJTIwc3dpdGNoYm9hcmQlMjBjaXJjdWl0JTIwYnJlYWtlciUyMHBhbmVsJTIwcmVzaWRlbnRpYWwlMjBjbG9zZSUyMHVwfGVufDF8MHx8fDE3ODE3NDM2ODF8MA&ixlib=rb-4.1.0&q=80&w=1080
 cover_image_alt: how to reset safety switch — residential switchboard panel close up
 cover_image_prompt: electrical switchboard circuit breaker panel residential close up
 author: Wenest

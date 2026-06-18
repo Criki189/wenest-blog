@@ -1,35 +1,67 @@
 ---
-title: "Why your aircon isn't cooling: 8 things to check before calling a technician"
-slug: "aircon-not-cooling-troubleshooting"
-description: "Your aircon's running but not cooling? Check these 8 common causes — from dirty filters to refrigerant leaks — before booking a service call."
-primary_keyword: "aircon not cooling"
-secondary_keywords: ["split system not cooling", "ducted aircon weak airflow", "aircon running but not cold"]
-bucket: "how-to"
-status: "published"
+title: 'Why your aircon isn''t cooling: 8 things to check before calling a technician'
+slug: aircon-not-cooling-troubleshooting
+description: >-
+  Your aircon's running but not cooling? Check these 8 common causes — from
+  dirty filters to refrigerant leaks — before booking a service call.
+primary_keyword: aircon not cooling
+secondary_keywords:
+  - split system not cooling
+  - ducted aircon weak airflow
+  - aircon running but not cold
+bucket: how-to
+status: published
 target_word_count: 1400
-internal_links: ["/pricing", "/"]
-schema_type: "Article"
+internal_links:
+  - /pricing
+  - /
+schema_type: Article
 faq: true
 faq_items:
-  - question: "Why is my split system running but not cooling the room?"
-    answer: "Most often it's a dirty filter restricting airflow, or the outdoor unit is blocked by debris. Check both before calling a technician. If the compressor isn't running at all (the outdoor unit is silent), it could be a thermostat issue or electrical fault requiring a licensed HVAC tech."
-  - question: "How do I know if my aircon is low on refrigerant?"
-    answer: "Signs include ice buildup on the indoor coil or copper lines, weak airflow even with a clean filter, and the outdoor unit running constantly without cooling. Refrigerant doesn't 'run out' — a leak is always the cause. Only a licensed technician can legally top up refrigerant in Australia."
-  - question: "Can I run my aircon if it's not cooling properly?"
-    answer: "Not for long. Running an aircon with a refrigerant leak or blocked condenser can damage the compressor — an expensive repair. If you've checked the filter and thermostat and it's still not cooling, turn it off and book a service call."
-  - question: "How often should I clean my aircon filter in Sydney?"
-    answer: "Every 4 to 6 weeks during summer if you're running it daily. More often if you have pets or live near the beach (salt air clogs filters faster). A clogged filter is the single most common cause of weak cooling we see in Sydney homes."
-cover_image: "https://images.unsplash.com/photo-1672886974518-2549f2f98e5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDEyNjZ8MHwxfHNlYXJjaHwxfHxhaXJjb24lMjBub3QlMjBjb29saW5nJTIwU3lkbmV5JTIwaG9tZXxlbnwxfDB8fHwxNzc4MDY1MDY4fDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "Sydney residential aircon outdoor unit on building exterior with harbour bridge visible in background"
-cover_image_prompt: "aircon not cooling Sydney home"
+  - question: Why is my split system running but not cooling the room?
+    answer: >-
+      Most often it's a dirty filter restricting airflow, or the outdoor unit is
+      blocked by debris. Check both before calling a technician. If the
+      compressor isn't running at all (the outdoor unit is silent), it could be
+      a thermostat issue or electrical fault requiring a licensed HVAC tech.
+  - question: How do I know if my aircon is low on refrigerant?
+    answer: >-
+      Signs include ice buildup on the indoor coil or copper lines, weak airflow
+      even with a clean filter, and the outdoor unit running constantly without
+      cooling. Refrigerant doesn't 'run out' — a leak is always the cause. Only
+      a licensed technician can legally top up refrigerant in Australia.
+  - question: Can I run my aircon if it's not cooling properly?
+    answer: >-
+      Not for long. Running an aircon with a refrigerant leak or blocked
+      condenser can damage the compressor — an expensive repair. If you've
+      checked the filter and thermostat and it's still not cooling, turn it off
+      and book a service call.
+  - question: How often should I clean my aircon filter in Sydney?
+    answer: >-
+      Every 4 to 6 weeks during summer if you're running it daily. More often if
+      you have pets or live near the beach (salt air clogs filters faster). A
+      clogged filter is the single most common cause of weak cooling we see in
+      Sydney homes.
+cover_image: >-
+  https://images.unsplash.com/photo-1672886974518-2549f2f98e5a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDEyNjZ8MHwxfHNlYXJjaHwxfHxhaXJjb24lMjBub3QlMjBjb29saW5nJTIwU3lkbmV5JTIwaG9tZXxlbnwxfDB8fHwxNzgxNzQzNjgwfDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: >-
+  Sydney residential aircon outdoor unit on building exterior with harbour
+  bridge visible in background
+cover_image_prompt: aircon not cooling Sydney home
 body_images:
-  - src: "/images/blog/aircon-not-cooling-troubleshooting/body-1.jpg"
-    alt: "Dirty aircon filter removed from split system indoor unit showing dust buildup"
-    caption: "A clogged filter like this cuts airflow by 40% or more"
-    prompt: "Photorealistic close-up of a dirty air conditioner filter being removed from a white split system indoor unit in an Australian home, natural daylight, no text, no brand logos, residential interior visible in soft focus background"
-author: "Wenest"
-published_date: "2026-05-06"
-last_updated: "2026-05-06"
+  - src: /images/blog/aircon-not-cooling-troubleshooting/body-1.jpg
+    alt: >-
+      Dirty aircon filter removed from split system indoor unit showing dust
+      buildup
+    caption: A clogged filter like this cuts airflow by 40% or more
+    prompt: >-
+      Photorealistic close-up of a dirty air conditioner filter being removed
+      from a white split system indoor unit in an Australian home, natural
+      daylight, no text, no brand logos, residential interior visible in soft
+      focus background
+author: Wenest
+published_date: '2026-05-06'
+last_updated: '2026-05-06'
 ---
 
 It's 3 PM on a 34-degree Saturday. The split system's been running for two hours and the lounge room is still 28 degrees. You can hear the outdoor unit humming away, but the air coming out of the vents feels like a tired sigh.

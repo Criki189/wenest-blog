@@ -48,7 +48,8 @@ faq_items:
       directly into the drum on every clean, as the acid can degrade rubber
       hoses over time. Use a dedicated washing machine cleaner for the main
       cycle.
-cover_image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&q=80'
+cover_image: >-
+  https://images.unsplash.com/photo-1662220984920-3bd1f88e846f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDEyNjZ8MHwxfHNlYXJjaHwxfHxmcm9udCUyMGxvYWRlciUyMHdhc2hpbmclMjBtYWNoaW5lJTIwcnViYmVyJTIwc2VhbCUyMG1vdWxkJTIwY2xvc2UlMjB1cHxlbnwxfDB8fHwxNzgxNzQzNjg1fDA&ixlib=rb-4.1.0&q=80&w=1080
 cover_image_alt: Front-loader washing machine drum with brown residue stains
 cover_image_prompt: front loader washing machine rubber seal mould close up
 author: Wenest

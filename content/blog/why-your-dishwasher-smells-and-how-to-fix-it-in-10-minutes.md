@@ -1,28 +1,45 @@
 ---
-title: "Why your dishwasher smells (and how to fix it in 10 minutes)"
-slug: "why-your-dishwasher-smells-and-how-to-fix-it-in-10-minutes"
-description: "A smelly dishwasher almost always comes down to one of three things. Here's how to find which one, and a 10-minute fix you can do tonight."
-primary_keyword: "dishwasher smells"
-secondary_keywords: ["smelly dishwasher", "dishwasher filter cleaning", "dishwasher maintenance", "appliance care Sydney"]
-bucket: "problems"
-status: "published"
+title: Why your dishwasher smells (and how to fix it in 10 minutes)
+slug: why-your-dishwasher-smells-and-how-to-fix-it-in-10-minutes
+description: >-
+  A smelly dishwasher almost always comes down to one of three things. Here's
+  how to find which one, and a 10-minute fix you can do tonight.
+primary_keyword: dishwasher smells
+secondary_keywords:
+  - smelly dishwasher
+  - dishwasher filter cleaning
+  - dishwasher maintenance
+  - appliance care Sydney
+bucket: problems
+status: published
 target_word_count: 1100
-internal_links: ["/how-to-unblock-a-kitchen-sink-without-calling-a-plumber"]
-schema_type: "Article"
+internal_links:
+  - /how-to-unblock-a-kitchen-sink-without-calling-a-plumber
+schema_type: Article
 faq: true
 faq_items:
-  - question: "Why does my dishwasher smell even after a hot cycle?"
-    answer: "Hot cycles don't reach the filter or the door seal — the two places food residue actually sits. A clean cycle won't fix what's stuck under the spray arm or in the rubber gasket."
-  - question: "Is a smelly dishwasher unhygienic?"
-    answer: "It's not dangerous, but it means food is decomposing inside the machine. That bacteria gets transferred to your 'clean' dishes, especially glassware."
-  - question: "How often should I clean a dishwasher?"
-    answer: "Filter: once a month. Door seal wipe: every 2 weeks. Full empty-cycle clean with a dishwasher cleaner tablet or vinegar: every 3 months. Most Sydney homes do exactly none of this."
-cover_image: "https://images.unsplash.com/photo-1581622558663-b2e33377dfb2?w=1600&q=80"
-cover_image_alt: "Open stainless steel dishwasher with clean racks"
+  - question: Why does my dishwasher smell even after a hot cycle?
+    answer: >-
+      Hot cycles don't reach the filter or the door seal — the two places food
+      residue actually sits. A clean cycle won't fix what's stuck under the
+      spray arm or in the rubber gasket.
+  - question: Is a smelly dishwasher unhygienic?
+    answer: >-
+      It's not dangerous, but it means food is decomposing inside the machine.
+      That bacteria gets transferred to your 'clean' dishes, especially
+      glassware.
+  - question: How often should I clean a dishwasher?
+    answer: >-
+      Filter: once a month. Door seal wipe: every 2 weeks. Full empty-cycle
+      clean with a dishwasher cleaner tablet or vinegar: every 3 months. Most
+      Sydney homes do exactly none of this.
+cover_image: >-
+  https://images.unsplash.com/photo-1620568400263-6f1cf95b9e30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDEyNjZ8MHwxfHNlYXJjaHwxfHxkaXNod2FzaGVyJTIwc21lbGxzJTIwaG9tZXxlbnwxfDB8fHwxNzgxNzQzNjg1fDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: Open stainless steel dishwasher with clean racks
 body_images: []
-author: "Wenest"
-published_date: "2026-04-30"
-last_updated: "2026-04-30"
+author: Wenest
+published_date: '2026-04-30'
+last_updated: '2026-04-30'
 ---
 
 If you opened the dishwasher this morning and it smelled like a forgotten lunchbox — you're in good company. It's one of the three most common "is this thing broken?" calls we get, and almost always it isn't.

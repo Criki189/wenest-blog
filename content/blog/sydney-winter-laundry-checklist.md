@@ -51,7 +51,8 @@ faq_items:
       hangers straight from the dryer or off the clothes horse, and consider a
       garment steamer for winter layers. A steamer handles wool coats and thick
       jumpers in a quarter of the time an iron takes.
-cover_image: 'https://images.unsplash.com/photo-1581622558663-b2e33377dfb2?w=1600&q=80'
+cover_image: >-
+  https://images.unsplash.com/photo-1666585958614-ade385208fac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDEyNjZ8MHwxfHNlYXJjaHwxfHxpbmRvb3IlMjBjbG90aGVzJTIwZHJ5aW5nJTIwcmFjayUyMHdldCUyMHdpbnRlciUyMGxhdW5kcnklMjBsaXZpbmclMjByb29tfGVufDF8MHx8fDE3ODE3NDM2ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080
 cover_image_alt: winter laundry checklist — Sydney home with indoor drying rack
 cover_image_prompt: indoor clothes drying rack wet winter laundry living room
 author: Wenest

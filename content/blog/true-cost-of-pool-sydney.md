@@ -1,41 +1,85 @@
 ---
-title: "The true cost of owning a pool in Sydney (and what homeowners miss)"
-slug: "true-cost-of-pool-sydney"
-description: "Pool maintenance cost Sydney breakdown: chemicals, electricity, repairs, insurance. The annual expenses most homeowners don't budget for."
-primary_keyword: "pool maintenance cost Sydney"
-secondary_keywords: ["Sydney pool running cost", "pool ownership AUD", "pool maintenance budget Australia"]
-bucket: "home-operations"
-status: "published"
+title: The true cost of owning a pool in Sydney (and what homeowners miss)
+slug: true-cost-of-pool-sydney
+description: >-
+  Pool maintenance cost Sydney breakdown: chemicals, electricity, repairs,
+  insurance. The annual expenses most homeowners don't budget for.
+primary_keyword: pool maintenance cost Sydney
+secondary_keywords:
+  - Sydney pool running cost
+  - pool ownership AUD
+  - pool maintenance budget Australia
+bucket: home-operations
+status: published
 target_word_count: 1800
-internal_links: ["/pricing", "/"]
-schema_type: "Article"
+internal_links:
+  - /pricing
+  - /
+schema_type: Article
 faq: true
 faq_items:
-  - question: "How much does it cost to run a pool in Sydney per year?"
-    answer: "Most Sydney pool owners spend $2,800 to $4,200 annually when you account for chemicals, electricity, water, repairs, and council rates. The electricity alone for a standard pump running 8 hours daily is $600–$900. That figure doesn't include one-off repairs like resurfacing or equipment replacement, which can add thousands in any given year."
-  - question: "What are the hidden costs of pool ownership in Sydney?"
-    answer: "The iceberg costs are council rates (pools add $150–$300 to your annual bill), insurance loading (around $80–$150 extra per year), water loss from evaporation in summer (roughly $200–$350 annually), and the compounding cost of deferred maintenance. A cracked tile you ignore in year one becomes a $4,000 resurfacing job in year three."
-  - question: "Is a saltwater pool cheaper to run than chlorine in Sydney?"
-    answer: "Saltwater systems cost more upfront ($1,800–$3,500 installed) but reduce ongoing chemical expenses by about 40%. You'll spend $300–$500 per year on salt and stabiliser instead of $500–$800 on chlorine. The chlorinator cell needs replacing every 3–5 years at $600–$1,200. Over a decade, saltwater is marginally cheaper if you factor in time saved on chemical balancing."
-  - question: "How much does pool equipment replacement cost in Sydney?"
-    answer: "A new variable-speed pump costs $800–$1,600 plus installation ($200–$400). Filters range from $400 for cartridge models to $1,200 for sand or DE filters. Heaters are $2,500–$6,000 depending on type. Chlorinators run $600–$1,200 for the cell alone. Budget for at least one major equipment replacement every 5–7 years."
-  - question: "Can you reduce pool running costs in Sydney without sacrificing water quality?"
-    answer: "Switching to a variable-speed pump saves $300–$500 per year in electricity. Running the pump during off-peak hours (10pm–7am on most Sydney plans) cuts costs by 30–40%. A pool cover reduces evaporation, saving $150–$250 annually on water and chemicals. Dialling back heating by 2°C saves roughly $200 per season. Those four changes together can halve your running costs without affecting swim quality."
-cover_image: "https://images.unsplash.com/photo-1569047724922-66ba3037bc7a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDEyNjZ8MHwxfHNlYXJjaHwxfHxwb29sJTIwbWFpbnRlbmFuY2UlMjBjb3N0JTIwU3lkbmV5JTIwU3lkbmV5JTIwaG9tZXxlbnwxfDB8fHwxNzc4NjM2MDg3fDA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "backyard swimming pool in Sydney residential home with maintenance equipment visible"
-cover_image_prompt: "backyard swimming pool Sydney residential home maintenance equipment"
+  - question: How much does it cost to run a pool in Sydney per year?
+    answer: >-
+      Most Sydney pool owners spend $2,800 to $4,200 annually when you account
+      for chemicals, electricity, water, repairs, and council rates. The
+      electricity alone for a standard pump running 8 hours daily is $600–$900.
+      That figure doesn't include one-off repairs like resurfacing or equipment
+      replacement, which can add thousands in any given year.
+  - question: What are the hidden costs of pool ownership in Sydney?
+    answer: >-
+      The iceberg costs are council rates (pools add $150–$300 to your annual
+      bill), insurance loading (around $80–$150 extra per year), water loss from
+      evaporation in summer (roughly $200–$350 annually), and the compounding
+      cost of deferred maintenance. A cracked tile you ignore in year one
+      becomes a $4,000 resurfacing job in year three.
+  - question: Is a saltwater pool cheaper to run than chlorine in Sydney?
+    answer: >-
+      Saltwater systems cost more upfront ($1,800–$3,500 installed) but reduce
+      ongoing chemical expenses by about 40%. You'll spend $300–$500 per year on
+      salt and stabiliser instead of $500–$800 on chlorine. The chlorinator cell
+      needs replacing every 3–5 years at $600–$1,200. Over a decade, saltwater
+      is marginally cheaper if you factor in time saved on chemical balancing.
+  - question: How much does pool equipment replacement cost in Sydney?
+    answer: >-
+      A new variable-speed pump costs $800–$1,600 plus installation ($200–$400).
+      Filters range from $400 for cartridge models to $1,200 for sand or DE
+      filters. Heaters are $2,500–$6,000 depending on type. Chlorinators run
+      $600–$1,200 for the cell alone. Budget for at least one major equipment
+      replacement every 5–7 years.
+  - question: >-
+      Can you reduce pool running costs in Sydney without sacrificing water
+      quality?
+    answer: >-
+      Switching to a variable-speed pump saves $300–$500 per year in
+      electricity. Running the pump during off-peak hours (10pm–7am on most
+      Sydney plans) cuts costs by 30–40%. A pool cover reduces evaporation,
+      saving $150–$250 annually on water and chemicals. Dialling back heating by
+      2°C saves roughly $200 per season. Those four changes together can halve
+      your running costs without affecting swim quality.
+cover_image: >-
+  https://images.unsplash.com/photo-1503022651232-aa1b2a1503a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDEyNjZ8MHwxfHNlYXJjaHwxfHxiYWNreWFyZCUyMHN3aW1taW5nJTIwcG9vbCUyMFN5ZG5leSUyMHJlc2lkZW50aWFsJTIwaG9tZSUyMG1haW50ZW5hbmNlJTIwZXF1aXBtZW50fGVufDF8MHx8fDE3ODE3NDM2ODN8MA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: >-
+  backyard swimming pool in Sydney residential home with maintenance equipment
+  visible
+cover_image_prompt: backyard swimming pool Sydney residential home maintenance equipment
 body_images:
-  - src: "/images/blog/true-cost-of-pool-sydney/body-1.jpg"
-    alt: "pool chemical testing kit and pH meter on poolside tiles"
-    caption: "Chemical balancing accounts for $500–$800 annually in most Sydney pools"
-    prompt: "photorealistic pool chemical testing kit with pH meter and test strips on cream poolside tiles, Australian residential backyard setting, warm natural afternoon lighting, no text or brand logos visible"
-  - src: "/images/blog/true-cost-of-pool-sydney/body-2.jpg"
-    alt: "variable speed pool pump installed beside outdoor pool filter system"
-    caption: "Upgrading to a variable-speed pump saves $300–$500 per year in electricity"
-    prompt: "photorealistic variable speed pool pump and filter system installed beside residential pool, Australian suburban home, clean modern equipment, natural daylight, no brand names or text in image"
-author: "Wenest"
-published_date: "2026-05-13"
-last_updated: "2026-05-13"
+  - src: /images/blog/true-cost-of-pool-sydney/body-1.jpg
+    alt: pool chemical testing kit and pH meter on poolside tiles
+    caption: Chemical balancing accounts for $500–$800 annually in most Sydney pools
+    prompt: >-
+      photorealistic pool chemical testing kit with pH meter and test strips on
+      cream poolside tiles, Australian residential backyard setting, warm
+      natural afternoon lighting, no text or brand logos visible
+  - src: /images/blog/true-cost-of-pool-sydney/body-2.jpg
+    alt: variable speed pool pump installed beside outdoor pool filter system
+    caption: Upgrading to a variable-speed pump saves $300–$500 per year in electricity
+    prompt: >-
+      photorealistic variable speed pool pump and filter system installed beside
+      residential pool, Australian suburban home, clean modern equipment,
+      natural daylight, no brand names or text in image
+author: Wenest
+published_date: '2026-05-13'
+last_updated: '2026-05-13'
 ---
 
 You bought the house with the pool because the kids wanted it. Three summers in, you're realising the pool owns you more than you own it. The chemical bill last quarter was $280. The electricity meter spins faster than it should. And the pump is making a noise you can't unhear.

@@ -51,7 +51,8 @@ faq_items:
       running it to a garden drain, but checking the anode and element requires
       a licensed plumber. If your system is over five years old, book a
       professional service rather than relying on a DIY drain.
-cover_image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&q=80'
+cover_image: >-
+  https://images.unsplash.com/photo-1758707845065-c6ece22689e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDEyNjZ8MHwxfHNlYXJjaHwxfHxleHBvc2VkJTIwY29wcGVyJTIwcGx1bWJpbmclMjBwaXBlcyUyMGV4dGVyaW9yJTIwYnJpY2slMjB3YWxsJTIwY29sZCUyMHNlYXNvbnxlbnwxfDB8fHwxNzgxNzQzNjgyfDA&ixlib=rb-4.1.0&q=80&w=1080
 cover_image_alt: winter plumbing checklist Sydney — Sydney home pipes
 cover_image_prompt: exposed copper plumbing pipes exterior brick wall cold season
 author: Wenest

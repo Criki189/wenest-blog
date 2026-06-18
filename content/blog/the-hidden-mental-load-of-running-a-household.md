@@ -1,28 +1,46 @@
 ---
-title: "The hidden mental load of running a household"
-slug: "the-hidden-mental-load-of-running-a-household"
-description: "Running a Sydney home isn't the work itself — it's holding everything in your head. Here's why it costs more than you think, and what to do about it."
-primary_keyword: "mental load household"
-secondary_keywords: ["household management", "home admin", "domestic mental load", "household systems"]
-bucket: "home-operations"
-status: "published"
+title: The hidden mental load of running a household
+slug: the-hidden-mental-load-of-running-a-household
+description: >-
+  Running a Sydney home isn't the work itself — it's holding everything in your
+  head. Here's why it costs more than you think, and what to do about it.
+primary_keyword: mental load household
+secondary_keywords:
+  - household management
+  - home admin
+  - domestic mental load
+  - household systems
+bucket: home-operations
+status: published
 target_word_count: 1200
-internal_links: ["/how-to-unblock-a-kitchen-sink-without-calling-a-plumber"]
-schema_type: "Article"
+internal_links:
+  - /how-to-unblock-a-kitchen-sink-without-calling-a-plumber
+schema_type: Article
 faq: true
 faq_items:
-  - question: "What is the mental load of running a household?"
-    answer: "It's the invisible work of remembering, planning, scheduling, and following up on everything a home needs — separate from the actual chores. Think: noticing the gutters need clearing before the first storm, not the clearing itself."
-  - question: "Why does the mental load disproportionately fall on one person?"
-    answer: "It usually defaults to whoever notices things first. Without an explicit system, that person becomes the household's air traffic control by accident, and it stays that way."
-  - question: "How do you reduce mental load without just outsourcing it?"
-    answer: "Write the system down. A shared calendar of recurring jobs (gutter clearing, smoke alarm checks, pool service) plus a single source of truth for tradies turns hidden work into visible, delegable tasks."
-cover_image: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1600&q=80"
-cover_image_alt: "Quiet Sydney living room with morning light through linen curtains"
+  - question: What is the mental load of running a household?
+    answer: >-
+      It's the invisible work of remembering, planning, scheduling, and
+      following up on everything a home needs — separate from the actual chores.
+      Think: noticing the gutters need clearing before the first storm, not the
+      clearing itself.
+  - question: Why does the mental load disproportionately fall on one person?
+    answer: >-
+      It usually defaults to whoever notices things first. Without an explicit
+      system, that person becomes the household's air traffic control by
+      accident, and it stays that way.
+  - question: How do you reduce mental load without just outsourcing it?
+    answer: >-
+      Write the system down. A shared calendar of recurring jobs (gutter
+      clearing, smoke alarm checks, pool service) plus a single source of truth
+      for tradies turns hidden work into visible, delegable tasks.
+cover_image: >-
+  https://images.unsplash.com/photo-1560462162-88f0dcc57ce0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDEyNjZ8MHwxfHNlYXJjaHwxfHxtZW50YWwlMjBsb2FkJTIwaG91c2Vob2xkJTIwaG9tZXxlbnwxfDB8fHwxNzgxNzQzNjgyfDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: Quiet Sydney living room with morning light through linen curtains
 body_images: []
-author: "Wenest"
-published_date: "2026-04-25"
-last_updated: "2026-04-25"
+author: Wenest
+published_date: '2026-04-25'
+last_updated: '2026-04-25'
 ---
 
 The plumber didn't show. Again.

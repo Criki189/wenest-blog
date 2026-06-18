@@ -1,35 +1,66 @@
 ---
-title: "How to unblock a kitchen sink without calling a plumber"
-slug: "unblock-kitchen-sink-without-plumber"
-description: "Step-by-step guide to clear a blocked kitchen sink using tools you already have. Know when DIY works and when to call a licensed plumber."
-primary_keyword: "unblock kitchen sink"
-secondary_keywords: ["blocked sink drain", "kitchen sink not draining", "DIY sink unblocking"]
-bucket: "how-to"
-status: "published"
+title: How to unblock a kitchen sink without calling a plumber
+slug: unblock-kitchen-sink-without-plumber
+description: >-
+  Step-by-step guide to clear a blocked kitchen sink using tools you already
+  have. Know when DIY works and when to call a licensed plumber.
+primary_keyword: unblock kitchen sink
+secondary_keywords:
+  - blocked sink drain
+  - kitchen sink not draining
+  - DIY sink unblocking
+bucket: how-to
+status: published
 target_word_count: 1500
-internal_links: ["/pricing", "/"]
-schema_type: "Article"
+internal_links:
+  - /pricing
+  - /
+schema_type: Article
 faq: true
 faq_items:
-  - question: "How long does it take to unblock a kitchen sink?"
-    answer: "Most blockages clear in 10 to 30 minutes using a plunger or drain snake. If you've tried both methods for 20 minutes without progress, the blockage is likely deeper in the pipe or in the trap itself. At that point, you're looking at removing the P-trap or calling someone in."
-  - question: "Can I use Drano or chemical drain cleaner on my kitchen sink?"
-    answer: "We've stopped recommending chemical drain cleaners for kitchen sinks. They rarely work on grease blockages, they can damage older PVC pipes, and if the blockage doesn't clear, you're left with caustic water sitting in the sink. Boiling water and a plunger are safer and just as effective for most clogs."
-  - question: "What causes kitchen sinks to block in Sydney homes?"
-    answer: "Grease and cooking oil are the main culprits. They coat the inside of pipes and trap food scraps, coffee grounds, and soap residue. In older homes with cast iron or galvanised pipes, rust and scale buildup narrow the pipe diameter over time, making blockages more frequent."
-  - question: "When should I call a plumber instead of DIY?"
-    answer: "Call a licensed plumber if water backs up into other fixtures when you run the sink, if you've removed the P-trap and the blockage is further down, or if the sink has been slow-draining for weeks despite your attempts. Also call if you're in a strata building and suspect the blockage is in a shared stack."
-cover_image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&q=80"
-cover_image_alt: "Kitchen sink plunger stainless steel close up residential"
-cover_image_prompt: "kitchen sink plunger stainless steel close up residential warm lighting"
+  - question: How long does it take to unblock a kitchen sink?
+    answer: >-
+      Most blockages clear in 10 to 30 minutes using a plunger or drain snake.
+      If you've tried both methods for 20 minutes without progress, the blockage
+      is likely deeper in the pipe or in the trap itself. At that point, you're
+      looking at removing the P-trap or calling someone in.
+  - question: Can I use Drano or chemical drain cleaner on my kitchen sink?
+    answer: >-
+      We've stopped recommending chemical drain cleaners for kitchen sinks. They
+      rarely work on grease blockages, they can damage older PVC pipes, and if
+      the blockage doesn't clear, you're left with caustic water sitting in the
+      sink. Boiling water and a plunger are safer and just as effective for most
+      clogs.
+  - question: What causes kitchen sinks to block in Sydney homes?
+    answer: >-
+      Grease and cooking oil are the main culprits. They coat the inside of
+      pipes and trap food scraps, coffee grounds, and soap residue. In older
+      homes with cast iron or galvanised pipes, rust and scale buildup narrow
+      the pipe diameter over time, making blockages more frequent.
+  - question: When should I call a plumber instead of DIY?
+    answer: >-
+      Call a licensed plumber if water backs up into other fixtures when you run
+      the sink, if you've removed the P-trap and the blockage is further down,
+      or if the sink has been slow-draining for weeks despite your attempts.
+      Also call if you're in a strata building and suspect the blockage is in a
+      shared stack.
+cover_image: >-
+  https://images.unsplash.com/photo-1661045327753-3f2a047d00a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDEyNjZ8MHwxfHNlYXJjaHwxfHxraXRjaGVuJTIwc2luayUyMHBsdW5nZXIlMjBzdGFpbmxlc3MlMjBzdGVlbCUyMGNsb3NlJTIwdXAlMjByZXNpZGVudGlhbCUyMHdhcm0lMjBsaWdodGluZ3xlbnwxfDB8fHwxNzgxNzQzNjgzfDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: Kitchen sink plunger stainless steel close up residential
+cover_image_prompt: kitchen sink plunger stainless steel close up residential warm lighting
 body_images:
-  - src: "/images/blog/unblock-kitchen-sink-without-plumber/body-1.jpg"
-    alt: "P-trap removal under kitchen sink with bucket Australian home"
-    caption: "Most blockages sit in the P-trap, which you can remove with a wrench and bucket."
-    prompt: "Photorealistic image of hands removing a white PVC P-trap under a kitchen sink in an Australian home, bucket underneath to catch water, warm natural lighting, no text, no logos, residential setting"
-author: "Wenest"
-published_date: "2026-05-06"
-last_updated: "2026-05-06"
+  - src: /images/blog/unblock-kitchen-sink-without-plumber/body-1.jpg
+    alt: P-trap removal under kitchen sink with bucket Australian home
+    caption: >-
+      Most blockages sit in the P-trap, which you can remove with a wrench and
+      bucket.
+    prompt: >-
+      Photorealistic image of hands removing a white PVC P-trap under a kitchen
+      sink in an Australian home, bucket underneath to catch water, warm natural
+      lighting, no text, no logos, residential setting
+author: Wenest
+published_date: '2026-05-06'
+last_updated: '2026-05-06'
 ---
 
 It's 7:30 AM. You're rinsing breakfast plates and the water's pooling around the drain, not going anywhere. The smell of last night's stir-fry is starting to rise. You've got 20 minutes before you need to leave.

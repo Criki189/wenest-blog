@@ -59,7 +59,8 @@ faq_items:
 published_date: '2026-06-12'
 last_updated: '2026-06-12'
 author: Wenest
-cover_image: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=1600&q=80'
+cover_image: >-
+  https://images.unsplash.com/photo-1760886801783-e2d0522dd2c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDEyNjZ8MHwxfHNlYXJjaHwxfHxwb3dlciUyMHBvaW50JTIwc2FmZXR5JTIwY2hlY2slMjBob21lfGVufDF8MHx8fDE3ODE3NDM2ODF8MA&ixlib=rb-4.1.0&q=80&w=1080
 cover_image_alt: power point safety check — Sydney home
 ---
 

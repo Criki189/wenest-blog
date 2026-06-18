@@ -57,7 +57,8 @@ faq_items:
       or there's visible water damage under the machine. Continuing to run a
       faulty pump can burn out the motor entirely, turning a $180 repair into a
       $600 one.
-cover_image: 'https://images.unsplash.com/photo-1581622558663-b2e33377dfb2?w=1600&q=80'
+cover_image: >-
+  https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDEyNjZ8MHwxfHNlYXJjaHwxfHxmcm9udCUyMGxvYWRlciUyMHdhc2hpbmclMjBtYWNoaW5lJTIwbGF1bmRyeSUyMHJvb20lMjBjbG9zZSUyMHVwJTIwc3RhbmRpbmclMjB3YXRlcnxlbnwxfDB8fHwxNzgxNzQzNjg0fDA&ixlib=rb-4.1.0&q=80&w=1080
 cover_image_alt: 'front loader washing machine with standing water, washing machine won''t drain'
 cover_image_prompt: front loader washing machine laundry room close up standing water
 author: Wenest

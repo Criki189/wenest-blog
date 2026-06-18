@@ -10,7 +10,8 @@
     "lint": "next lint",
     "validate-content": "tsx scripts/validate-content.ts",
     "new-post": "tsx scripts/new-post.ts",
-    "auto-publish": "tsx scripts/auto-publish.ts"
+    "auto-publish": "tsx scripts/auto-publish.ts",
+    "refresh-covers": "tsx scripts/refresh-covers.ts"
   },
   "dependencies": {
     "@vercel/og": "^0.6.4",

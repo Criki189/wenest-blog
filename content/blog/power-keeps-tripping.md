@@ -1,30 +1,59 @@
 ---
-title: "Why your power keeps tripping (and what's actually happening)"
-slug: "power-keeps-tripping"
-description: "Your circuit breaker keeps tripping in Sydney? Learn which switch, when it matters, and when you have a real electrical problem vs a quirk."
-primary_keyword: "circuit breaker keeps tripping"
-secondary_keywords: ["RCD keeps tripping Australia", "safety switch trips", "power trips frequently"]
-bucket: "problems"
-status: "published"
+title: Why your power keeps tripping (and what's actually happening)
+slug: power-keeps-tripping
+description: >-
+  Your circuit breaker keeps tripping in Sydney? Learn which switch, when it
+  matters, and when you have a real electrical problem vs a quirk.
+primary_keyword: circuit breaker keeps tripping
+secondary_keywords:
+  - RCD keeps tripping Australia
+  - safety switch trips
+  - power trips frequently
+bucket: problems
+status: published
 target_word_count: 1400
-internal_links: ["/pricing", "/"]
-schema_type: "Article"
+internal_links:
+  - /pricing
+  - /
+schema_type: Article
 faq: true
 faq_items:
-  - question: "What's the difference between a circuit breaker and an RCD in Australia?"
-    answer: "A circuit breaker protects your wiring from overload — too many appliances on one circuit. An RCD (residual current device, also called a safety switch) detects current leakage and cuts power in milliseconds to prevent electrocution. Both live in your switchboard. RCDs are mandatory in NSW for power points and lighting circuits."
-  - question: "Why does my RCD trip when it rains in Sydney?"
-    answer: "Water ingress into outdoor power points, garden lights, or pool equipment causes current leakage. The RCD detects it and trips. Common culprits: cracked outdoor sockets, corroded junction boxes, or poorly sealed garden spike lights. If it only trips during or after rain, start with outdoor circuits."
-  - question: "Can I just reset the switch and ignore it?"
-    answer: "If it trips once and stays on after reset, probably fine — could be a momentary surge. If it trips repeatedly (twice in a day, three times in a week), you have a fault. Ignoring it means either living without power on that circuit or risking a fire or shock hazard. Get it checked."
-  - question: "How much does it cost to fix a tripping circuit breaker in Sydney?"
-    answer: "Depends entirely on the cause. If it's a faulty appliance you can unplug yourself, $0. If it's a worn RCD that needs replacing, $180 to $280 plus GST for the part and labour. If it's a wiring fault behind walls, could be $400 to $800. No sparkie quotes this consistently — you'll get three answers from three electricians."
-cover_image: "https://images.unsplash.com/photo-1720175356041-6b1c963e0075?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDEyNjZ8MHwxfHNlYXJjaHwxfHxjaXJjdWl0JTIwYnJlYWtlciUyMGtlZXBzJTIwdHJpcHBpbmclMjBTeWRuZXklMjBob21lfGVufDF8MHx8fDE3NzkyMzg0NjN8MA&ixlib=rb-4.1.0&q=80&w=1080"
-cover_image_alt: "Electrical switchboard with circuit breakers and safety switches in a Sydney home"
-cover_image_prompt: "electrical switchboard circuit breaker panel residential Sydney home"
-author: "Wenest"
-published_date: "2026-05-20"
-last_updated: "2026-05-20"
+  - question: What's the difference between a circuit breaker and an RCD in Australia?
+    answer: >-
+      A circuit breaker protects your wiring from overload — too many appliances
+      on one circuit. An RCD (residual current device, also called a safety
+      switch) detects current leakage and cuts power in milliseconds to prevent
+      electrocution. Both live in your switchboard. RCDs are mandatory in NSW
+      for power points and lighting circuits.
+  - question: Why does my RCD trip when it rains in Sydney?
+    answer: >-
+      Water ingress into outdoor power points, garden lights, or pool equipment
+      causes current leakage. The RCD detects it and trips. Common culprits:
+      cracked outdoor sockets, corroded junction boxes, or poorly sealed garden
+      spike lights. If it only trips during or after rain, start with outdoor
+      circuits.
+  - question: Can I just reset the switch and ignore it?
+    answer: >-
+      If it trips once and stays on after reset, probably fine — could be a
+      momentary surge. If it trips repeatedly (twice in a day, three times in a
+      week), you have a fault. Ignoring it means either living without power on
+      that circuit or risking a fire or shock hazard. Get it checked.
+  - question: How much does it cost to fix a tripping circuit breaker in Sydney?
+    answer: >-
+      Depends entirely on the cause. If it's a faulty appliance you can unplug
+      yourself, $0. If it's a worn RCD that needs replacing, $180 to $280 plus
+      GST for the part and labour. If it's a wiring fault behind walls, could be
+      $400 to $800. No sparkie quotes this consistently — you'll get three
+      answers from three electricians.
+cover_image: >-
+  https://images.unsplash.com/photo-1759709042221-664b6664446c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDEyNjZ8MHwxfHNlYXJjaHwxfHxlbGVjdHJpY2FsJTIwc3dpdGNoYm9hcmQlMjBjaXJjdWl0JTIwYnJlYWtlciUyMHBhbmVsJTIwcmVzaWRlbnRpYWwlMjBTeWRuZXklMjBob21lfGVufDF8MHx8fDE3ODE3NDM2ODF8MA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: >-
+  Electrical switchboard with circuit breakers and safety switches in a Sydney
+  home
+cover_image_prompt: electrical switchboard circuit breaker panel residential Sydney home
+author: Wenest
+published_date: '2026-05-20'
+last_updated: '2026-05-20'
 ---
 
 It's 9:30 PM on a Wednesday. You're halfway through loading the dishwasher when every light in the kitchen goes out. The fridge hums to a stop. You walk to the switchboard in the hallway, flip the switch back up, and ten minutes later it trips again. This is the third time this week.

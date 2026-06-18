@@ -1,32 +1,66 @@
 ---
-title: "How to find a licensed electrician in Sydney without getting burned"
-slug: "find-licensed-electrician-sydney"
-description: "Verify NSW electrician licences, spot red flags, and ask the right questions before hiring. A practical guide for Sydney homeowners."
-primary_keyword: "licensed electrician Sydney"
-secondary_keywords: ["how to verify electrician licence NSW", "hiring electrician questions", "electrician red flags Sydney"]
-bucket: "transactional"
-status: "published"
+title: How to find a licensed electrician in Sydney without getting burned
+slug: find-licensed-electrician-sydney
+description: >-
+  Verify NSW electrician licences, spot red flags, and ask the right questions
+  before hiring. A practical guide for Sydney homeowners.
+primary_keyword: licensed electrician Sydney
+secondary_keywords:
+  - how to verify electrician licence NSW
+  - hiring electrician questions
+  - electrician red flags Sydney
+bucket: transactional
+status: published
 target_word_count: 1500
-internal_links: ["/pricing", "/"]
-schema_type: "Article"
+internal_links:
+  - /pricing
+  - /
+schema_type: Article
 faq: true
 faq_items:
-  - question: "How do I check if an electrician is licensed in NSW?"
-    answer: "Visit the NSW Fair Trading website and use their licence search tool. Enter the electrician's name or licence number. A valid licence will show the person's name, licence number, class, and expiry date. If they can't provide a licence number on the spot, that's your first red flag."
-  - question: "What questions should I ask an electrician before hiring them?"
-    answer: "Ask for their licence number and verify it yourself. Ask if they carry public liability insurance (minimum $10 million for electrical work). Get a written quote with a breakdown of labour, materials, and GST. Ask how they handle variations and additional costs. If they're vague on any of these, keep looking."
-  - question: "Can an electrician work in Sydney without a licence?"
-    answer: "No. All electrical work in NSW must be performed by someone holding a current electrical contractor licence or working under direct supervision of a licence holder. Unlicensed electrical work is illegal, uninsured, and dangerous. If something goes wrong, your home insurance won't cover it."
-  - question: "What's the difference between an electrical contractor licence and an electrician licence?"
-    answer: "An electrician licence allows someone to perform electrical work. An electrical contractor licence allows them to run a business, quote jobs, and take payment. If you're hiring someone to do paid work in your home, they need a contractor licence — not just a tradesperson licence."
-  - question: "How much does a licensed electrician cost in Sydney?"
-    answer: "Service call-outs typically start around $180 to $280 including GST, depending on the suburb and time of day. Hourly rates range from $120 to $200 plus materials. Jobs quoted as fixed-price (switchboard upgrades, rewiring, new circuits) vary widely — expect $800 to $3,500 for common residential work. Always get three quotes."
-cover_image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-cover_image_alt: "Licensed electrician working on a residential switchboard with circuit breakers"
-cover_image_prompt: "licensed electrician working residential switchboard circuit breakers hands"
-author: "Wenest"
-published_date: "2026-05-22"
-last_updated: "2026-05-22"
+  - question: How do I check if an electrician is licensed in NSW?
+    answer: >-
+      Visit the NSW Fair Trading website and use their licence search tool.
+      Enter the electrician's name or licence number. A valid licence will show
+      the person's name, licence number, class, and expiry date. If they can't
+      provide a licence number on the spot, that's your first red flag.
+  - question: What questions should I ask an electrician before hiring them?
+    answer: >-
+      Ask for their licence number and verify it yourself. Ask if they carry
+      public liability insurance (minimum $10 million for electrical work). Get
+      a written quote with a breakdown of labour, materials, and GST. Ask how
+      they handle variations and additional costs. If they're vague on any of
+      these, keep looking.
+  - question: Can an electrician work in Sydney without a licence?
+    answer: >-
+      No. All electrical work in NSW must be performed by someone holding a
+      current electrical contractor licence or working under direct supervision
+      of a licence holder. Unlicensed electrical work is illegal, uninsured, and
+      dangerous. If something goes wrong, your home insurance won't cover it.
+  - question: >-
+      What's the difference between an electrical contractor licence and an
+      electrician licence?
+    answer: >-
+      An electrician licence allows someone to perform electrical work. An
+      electrical contractor licence allows them to run a business, quote jobs,
+      and take payment. If you're hiring someone to do paid work in your home,
+      they need a contractor licence — not just a tradesperson licence.
+  - question: How much does a licensed electrician cost in Sydney?
+    answer: >-
+      Service call-outs typically start around $180 to $280 including GST,
+      depending on the suburb and time of day. Hourly rates range from $120 to
+      $200 plus materials. Jobs quoted as fixed-price (switchboard upgrades,
+      rewiring, new circuits) vary widely — expect $800 to $3,500 for common
+      residential work. Always get three quotes.
+cover_image: >-
+  https://images.unsplash.com/photo-1720175328600-06f71cee36c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NDEyNjZ8MHwxfHNlYXJjaHwxfHxsaWNlbnNlZCUyMGVsZWN0cmljaWFuJTIwU3lkbmV5JTIwaG9tZXxlbnwxfDB8fHwxNzgxNzQzNjgwfDA&ixlib=rb-4.1.0&q=80&w=1080
+cover_image_alt: >-
+  Licensed electrician working on a residential switchboard with circuit
+  breakers
+cover_image_prompt: licensed electrician working residential switchboard circuit breakers hands
+author: Wenest
+published_date: '2026-05-22'
+last_updated: '2026-05-22'
 ---
 
 The power goes out in half the house. You flip the breaker. Nothing. You flip it again. Still nothing. Now you need an electrician, and you need one today — but the last time you hired one off Google, they quoted $400 over the phone and charged $1,100 on the day.
